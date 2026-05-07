@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Los Piratas Restobar</title>
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="estilos/contactoStyle.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="logo">
+            <h1>Los Piratas Restobar</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menu</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto-hero">
+            <div class="hero-contenido">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes dudas o quieres hacer una reserva? Nuestra tripulación está lista para atenderte.</p>
+            </div>
+        </section>
+
+        <section class="contacto-contenedor">
+            
+            <article class="contacto-info">
+                <h3>Nuestros Datos</h3>
+                <br>
+                <p><strong>Ubicación:</strong> Santa Rosa, Manzana 8 Lote 49, Chiclayo (Ref. al lado del terminal pesquero Ecomphisa).</p>
+                <br>
+                <p><strong>Teléfono:</strong> 912-262-484</p>
+                <br>
+                <p><strong>Horario de atención:</strong> Todos los días de 7:00 am a 11:00 am</p>
+                <br>
+                <p><strong>Atención a cargo de:</strong> Estany Marisol Acosta Torres</p>
+            </article>
+
+            <article class="contacto-formulario">
+                <h3>Envíanos un Mensaje</h3>
+                <br>
+                <form action="#" method="POST" id="form-reserva">
+                    <div class="grupo-input">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="documento">
+                        <div>
+                        <label for="selDoc">Documento</label>
+                        <select name="selDoc" id="selDoc">
+                            <option value="void">Selecciona</option>
+                            <option value="DNI">DNI</option>
+                            <option value="RUC">RUC</option>    
+                        </select>
+                        </div>
+                        <input type="text" id="documento" name="documento" required>
+                    </div>
+                   
+                    <div class="grupo-input">
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje o Reserva:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                </form>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <h3>LOS PIRATAS</h3>
+        <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
+        
+        <div class="foot">
+            <div>
+                <h4>Navega</h4>
+                <a href="index.html">INICIO</a>
+                <a href="menu.html">MENÚ</a>
+                <a href="promociones.html">PROMOCIONES</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://instagram.com">Instagram</a>
+            </div>
+            <div>
+                <h4>Métodos de Pago</h4>
+                <img src="" alt="Yape">
+                <img src="" alt="Visa">
+                <img src="" alt="MasterCard">
+            </div>
+            <div>
+                <h4>Libro de Reclamaciones</h4>
+                <a href="reclamaciones.html">
+                    <img src="" alt="Libro de Reclamaciones">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

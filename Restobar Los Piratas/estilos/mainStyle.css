@@ -1,0 +1,58 @@
+.Cara{
+    text-align: center;
+    padding: 60px;
+    background: #4fb8e6;
+    color: #fff;
+    border-top: 2px solid #00a2ff;
+    border-bottom: 2px solid #00a2ff;
+}
+
+.Cara h2 {
+    margin-bottom: 10px;
+}
+
+.btn1 , .btn2{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px #00000033;
+}
+
+.btn1:hover, .btn2:hover {
+    background: #e67e22;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+article {
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    width: px;
+    box-shadow: 0 2px 8px #00000033;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.foot div{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
