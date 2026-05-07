@@ -56,7 +56,7 @@ footer a {
     gap: 20px;
 }
 
-.foot div {
+.foot > div {
     display: flex;
     flex-direction: column;
     align-items: center;

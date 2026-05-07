@@ -31,7 +31,8 @@ section {
     text-align: center;
 }
 
-section div {
+.platos > div,
+.ambiente > div{
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -51,8 +52,23 @@ article img {
     border-radius: 10px;
 }
 
-.foot div{
+.foot > div{
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 10px;
 }
+
+.Metodo{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.Metodo i{
+    font-size: 30px;
+}
+
+.Metodo span{
+    font-size: 15px;
+}
+
