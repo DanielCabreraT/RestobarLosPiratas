@@ -72,3 +72,10 @@ article img {
     font-size: 15px;
 }
 
+@media screen and (max-width:360px) {
+    .platos > div,
+    .ambiente > div{
+        display: flex;
+        flex-direction: column;
+    }
+}
