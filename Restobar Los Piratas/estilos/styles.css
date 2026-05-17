@@ -78,3 +78,10 @@ footer a:hover {
         flex-direction: column;
     }
 }
+
+@media screen and (max-width:520px) {
+    .foot{
+        display: flex;
+        flex-direction: column;
+    }
+}
