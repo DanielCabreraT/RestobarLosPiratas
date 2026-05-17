@@ -77,11 +77,13 @@ footer a:hover {
         display: flex;
         flex-direction: column;
     }
-}
 
-@media screen and (max-width:520px) {
     .foot{
         display: flex;
         flex-direction: column;
+    }
+
+    footer{
+        text-align: center;
     }
 }
