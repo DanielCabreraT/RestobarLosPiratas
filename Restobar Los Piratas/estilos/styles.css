@@ -71,3 +71,10 @@ footer a:hover {
     margin: 5px 0;
     object-fit: contain;
 }
+
+@media screen and (max-width:520px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
