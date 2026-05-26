@@ -1,0 +1,127 @@
+
+.hero-local {
+    position: relative;
+    min-height: 430px;
+    padding: 90px 20px;
+    background: 
+        linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.90)),
+        url("../imagenes/parrilla1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid var(--dorado);
+    overflow: hidden;
+}
+
+.hero-local::before {
+    position: absolute;
+    font-size: 210px;
+    color: rgba(255, 243, 224, 0.08);
+    top: 35px;
+    left: 8%;
+}
+
+.hero-local::after {
+    content: "";
+    position: absolute;
+    inset: 25px;
+    border: 2px solid rgba(217, 164, 65, 0.45);
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+.hero-local-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    background: rgba(11, 11, 11, 0.45);
+    padding: 45px 55px;
+    border-radius: 18px;
+    border: 2px solid var(--dorado);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+}
+
+.hero-local h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: var(--crema);
+}
+
+.hero-local p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: var(--crema);
+}
+
+.local{
+    width: 90%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.info-local{
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 25px;
+    background: var(--pergamino);
+    padding: 35px;
+    border-radius: 16px;
+    border: 2px solid var(--cobre);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    align-items: center;
+}
+
+.info-local h3{
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: var(--marron-oscuro);
+}
+
+.info-local p{
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+.btn-whatsapp{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 14px 24px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+      margin-left: 4cap;
+}
+
+.btn-whatsapp:hover{
+    transform: scale(1.05);
+}
+
+.imagen-local img{
+
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.mapa-local iframe{
+    border-radius: 16px;
+}

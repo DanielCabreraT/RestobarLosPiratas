@@ -1,82 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Piratas Restobar</title>
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/mainStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img src="imagenes/logo.png" alt="logo">
-                <h1>Los Piratas Restobar</h1>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logo de Los Piratas Restobar">
+            <h1>Los Piratas Restobar</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="promociones.html">Promociones</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero-inicio">
+        <div class="hero-contenido">
+            <span class="etiqueta-hero">Sabor, aventura y tradición</span>
+            <h2>Bienvenidos a Los Piratas</h2>
+            <p>
+                Embárcate en una experiencia gastronómica con platos marinos,
+                parrillas y bebidas en un ambiente temático inspirado en el mundo pirata.
+            </p>
+            <div class="hero-botones">
+                <a href="menu.html" class="btn-principal">Ver carta</a>
+                <a href="contacto.html" class="btn-secundario">Reservar ahora</a>
             </div>
+        </div>
+    </section>
 
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="menu.html">Menu</a>
-                <a href="promociones.html">Promociones</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
-        </header>
+    <main>
+        <section class="platos destacados-seccion">
+            <span class="subtitulo-seccion">Los favoritos de la tripulación</span>
+            <h2>Nuestros platos estrella</h2>
 
-        <section class="Cara">
-            <h2>Bienvenidos  a los Piratas</h2>
-            <p>Embárcate en una aventura gastronómica</p>
-            <a href="Menu.html" class="btn1">Nuestra Carta</a>
+            <div class="tarjetas-grid">
+                <article class="tarjeta-destacada">
+                    <img src="imagenes/ceviche1.jpg" alt="Ceviche clásico de Los Piratas Restobar">
+                    <div class="tarjeta-contenido">
+                        <h3>Ceviche clásico</h3>
+                        <p>Pescado fresco, limón, ají y el sabor tradicional del norte.</p>
+                        <span>S/ 25.00</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destacada">
+                    <img src="imagenes/parrilla2.jpg" alt="Parrilla mixta de Los Piratas Restobar">
+                    <div class="tarjeta-contenido">
+                        <h3>Parrilla mixta</h3>
+                        <p>Carne, pollo y chorizo a la parrilla para compartir.</p>
+                        <span>S/ 35.00</span>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destacada">
+                    <img src="imagenes/bebida2.jpg" alt="Limonada frozen de Los Piratas Restobar">
+                    <div class="tarjeta-contenido">
+                        <h3>Limonada frozen</h3>
+                        <p>Refrescante, natural y perfecta para acompañar tu comida.</p>
+                        <span>S/ 10.00</span>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <main>
-            <section class="platos">
-                <h2>Nuestros Platos Estrellas</h2>
-                <div>
-                    <article>
-                        <img src="" alt="Comida 1">
-                        <p>Comida 1</p>
-                    </article>
-                    <article>
-                        <img src="" alt="Comida 2">
-                        <p>Comida 2</p>
-                    </article>
-                    <article>
-                        <img src="" alt="Comida 3">
-                        <p>Comida 3</p>
-                    </article>
-                </div>
-            </section>
+        <section class="ambiente">
+            <div class="ambiente-texto">
+                <span class="subtitulo-seccion">Ambiente temático</span>
+                <h2>Un espacio con espíritu pirata</h2>
+                <p>
+                    Disfruta de un lugar cálido, familiar y diferente, con una identidad visual
+                    inspirada en pergaminos, madera, mar y aventura. Ideal para compartir entre amigos
+                    o familia.
+                </p>
+                <a href="nosotros.html" class="btn-principal">Conoce nuestra historia</a>
+            </div>
 
-            <section class="ambiente">
-                <h2>Ambiente del local</h2>
-                <p>DISFRUTA DE UN ESPACIO ÚNICO CON DECORACIÓN TEMÁTICA PIRATA</p>
-                <div>
-                    <article>
-                        <img src="" alt="Foto1">
-                        <p>Descripcion 1</p>
-                    </article>
-                    <article>
-                        <img src="" alt="Foto2">
-                        <p>Descripcion 2</p>
-                    </article>
-                    <article>
-                        <img src="" alt="Foto3">
-                        <p>Descripcion 3</p>
-                    </article>
-                </div>
+            <div class="ambiente-galeria">
+                <img src="imagenes/ceviche2.jpg" alt="Plato marino servido en Los Piratas Restobar">
+                <img src="imagenes/parrilla1.jpg" alt="Parrilla preparada en Los Piratas Restobar">
+                <img src="imagenes/bebida1.jpg" alt="Bebida refrescante de Los Piratas Restobar">
+            </div>
+        </section>
 
-                <div class="historia">
-                    <article>
-                        <h1>DESCUBRE MÁS SOBRE NUESTRA HISTORIA Y LO QUE NOS HACE ÚNICOS</h1>
-                        <a href="Nosotros.html" class="btn2">CONOCE NUESTRA HISTORIA</a>
-                    </article>
-                </div>
-            </section>
-        </main>
+        <section class="llamado-reserva">
+            <div>
+                <h2>¿Listo para subir a bordo?</h2>
+                <p>Contáctanos y reserva tu próxima visita a Los Piratas Restobar.</p>
+                <a href="contacto.html" class="btn-principal">Ir a contacto</a>
+            </div>
+        </section>
+    </main>
 
-        <footer>
+    <footer>
         <h3>LOS PIRATAS</h3>
         <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
         
@@ -96,23 +121,13 @@
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
-                <img src="" alt="Yape">
-                <div class="Metodo">
-                    <i class="fa-brands fa-cc-visa"></i>
-                    <span>Visa</span>
-                </div>
-                <div class="Metodo">
-                    <i class="fa-brands fa-cc-mastercard"></i>
-                    <span>MasterCard</span>
-                </div>
+                <p>Yape · Visa · MasterCard</p>
             </div>
             <div>
                 <h4>Libro de Reclamaciones</h4>
-                <a href="reclamaciones.html">
-                    <img src="" alt="Libro de Reclamaciones">
-                </a>
+                <a href="contacto.html">Solicitar atención</a>
             </div>
         </div>
     </footer>
-    </body>
+</body>
 </html>

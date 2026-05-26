@@ -1,81 +1,333 @@
-.Cara{
+/* HERO DE INICIO */
+
+.hero-inicio {
+    position: relative;
+    min-height: 520px;
+    padding: 110px 20px;
+    background:
+        linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.88)),
+        url("../imagenes/ceviche1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 60px;
-    background: #4fb8e6;
-    color: #fff;
-    border-top: 2px solid #00a2ff;
-    border-bottom: 2px solid #00a2ff;
+    overflow: hidden;
+    border-bottom: 4px solid var(--dorado);
 }
 
-.Cara h2 {
+.hero-inicio::before {
+    content: "☠";
+    position: absolute;
+    font-size: 220px;
+    color: rgba(255, 243, 224, 0.08);
+    left: 7%;
+    top: 50px;
+}
+
+.hero-inicio::after {
+    content: "";
+    position: absolute;
+    inset: 28px;
+    border: 2px solid rgba(217, 164, 65, 0.45);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    background: rgba(11, 11, 11, 0.48);
+    padding: 48px 58px;
+    border-radius: 18px;
+    border: 2px solid var(--dorado);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+}
+
+.etiqueta-hero,
+.subtitulo-seccion {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.hero-contenido h2,
+section h2 {
+    font-family: 'Pirata One', cursive;
+    font-weight: 400;
+}
+
+.hero-contenido h2 {
+    font-size: 68px;
+    margin-bottom: 18px;
+}
+
+.hero-contenido p {
+    font-size: 19px;
+    line-height: 1.7;
+    margin-bottom: 26px;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.btn-principal,
+.btn-secundario {
+    display: inline-block;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.btn-principal {
+    background: var(--dorado);
+    color: var(--negro-pirata);
+}
+
+.btn-secundario {
+    background: transparent;
+    color: var(--crema);
+    border: 2px solid var(--dorado);
+}
+
+.btn-principal:hover,
+.btn-secundario:hover {
+    transform: translateY(-3px);
+}
+
+.btn-principal:hover {
+    background: var(--cobre);
+    color: var(--blanco);
+}
+
+.btn-secundario:hover {
+    background: var(--dorado);
+    color: var(--negro-pirata);
+}
+
+/* PLATOS DESTACADOS */
+
+.destacados-seccion {
+    padding: 75px 8%;
+    text-align: center;
+    background: var(--crema);
+}
+
+section h2 {
+    color: var(--marron-oscuro);
+    font-size: 52px;
+    margin-bottom: 30px;
+}
+
+.tarjetas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.tarjeta-destacada {
+    position: relative;
+    background: var(--pergamino);
+    border: 2px solid var(--cobre);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 14px var(--sombra);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-destacada::before {
+    content: "★";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 42px;
+    height: 42px;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    z-index: 2;
+}
+
+.tarjeta-destacada:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+.tarjeta-destacada img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.tarjeta-contenido {
+    padding: 24px;
+}
+
+.tarjeta-contenido h3 {
+    font-family: 'Pirata One', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--marron-oscuro);
     margin-bottom: 10px;
 }
 
-.btn1 , .btn2{
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ffa500;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-    margin-top: 15px;
-    box-shadow: 0 2px 8px #00000033;
+.tarjeta-contenido p {
+    color: var(--negro-pirata);
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
-.btn1:hover, .btn2:hover {
-    background: #e67e22;
+.tarjeta-contenido span {
+    color: var(--cobre);
+    font-size: 20px;
+    font-weight: 800;
 }
 
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
+/* AMBIENTE */
 
-.platos > div,
-.ambiente > div{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-}
-
-article {
-    background: white;
-    padding: 40px;
-    border-radius: 5px;
-    width: px;
-    box-shadow: 0 2px 8px #00000033;
-}
-
-article img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.foot > div{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.Metodo{
-    display: flex;
+.ambiente {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     align-items: center;
-    gap: 3px;
+    padding: 75px 8%;
+    background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-madera));
+    color: var(--crema);
 }
 
-.Metodo i{
-    font-size: 30px;
+.ambiente h2 {
+    color: var(--crema);
+    margin-bottom: 20px;
 }
 
-.Metodo span{
-    font-size: 15px;
+.ambiente-texto p {
+    line-height: 1.8;
+    margin-bottom: 25px;
 }
 
-@media screen and (max-width:520px) {
-    .platos > div,
-    .ambiente > div{
-        display: flex;
-        flex-direction: column;
+.ambiente-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.ambiente-galeria img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 3px solid var(--dorado);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.35);
+}
+
+.ambiente-galeria img:first-child {
+    grid-column: span 2;
+}
+
+/* LLAMADO */
+
+.llamado-reserva {
+    padding: 75px 20px;
+    text-align: center;
+    background: var(--pergamino);
+}
+
+.llamado-reserva div {
+    max-width: 850px;
+    margin: auto;
+    border: 2px solid var(--cobre);
+    border-radius: 18px;
+    padding: 45px;
+    background: var(--crema);
+    box-shadow: 0 5px 14px var(--sombra);
+}
+
+.llamado-reserva p {
+    margin-bottom: 25px;
+    color: var(--negro-pirata);
+}
+
+@media (max-width: 1000px) {
+    .tarjetas-grid,
+    .ambiente {
+        grid-template-columns: 1fr;
     }
+
+    .ambiente-texto {
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero-inicio {
+        min-height: auto;
+        padding: 75px 18px;
+    }
+
+    .hero-contenido {
+        padding: 32px 22px;
+    }
+
+    .hero-contenido h2 {
+        font-size: 44px;
+    }
+
+    .hero-contenido p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 40px;
+    }
+
+    .destacados-seccion,
+    .ambiente {
+        padding: 55px 5%;
+    }
+
+    .ambiente-galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .ambiente-galeria img:first-child {
+        grid-column: span 1;
+    }
+
+    .llamado-reserva div {
+        padding: 30px 22px;
+    }
+}
+
+/* CORRECCIÓN DEL TÍTULO DEL HERO */
+
+.hero-inicio .hero-contenido h2 {
+    color: var(--crema);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85),
+                 0 0 14px rgba(217, 164, 65, 0.45);
+    opacity: 1;
+}
+
+.hero-inicio .hero-contenido p {
+    color: var(--crema);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
 }

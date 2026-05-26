@@ -1,144 +1,344 @@
+/* HERO CONTACTO */
+
 .contacto-hero {
-    background-color: #4fb8e6; 
-    color: #fff;
-    text-align: center;
-    padding: 80px 20px;
+    position: relative;
+    min-height: 420px;
+    padding: 95px 20px;
+    background:
+        linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.92)),
+        url("../imagenes/parrilla1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    border-bottom: 4px solid var(--dorado);
+    overflow: hidden;
+}
+
+.contacto-hero::before {
+    content: "✉";
+    position: absolute;
+    font-size: 160px;
+    color: rgba(255, 243, 224, 0.07);
+    top: 35px;
+    left: 8%;
+    z-index: 0;
+}
+
+.contacto-hero::after {
+    content: "";
+    position: absolute;
+    inset: 28px;
+    border: 2px solid rgba(217, 164, 65, 0.75);
+    border-radius: 18px;
+    pointer-events: none;
+    z-index: 1;
 }
 
 .hero-contenido {
-    max-width: 600px;
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    padding: 38px 50px;
+    background: rgba(11, 11, 11, 0.42);
+    border: 2px solid var(--dorado);
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
 }
 
-.hero-contenido h2 {
-    font-size: 2.5rem;
-    font-weight: normal;
-    margin-bottom: 15px;
+.etiqueta-contacto {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
 }
 
-.hero-contenido p {
-    font-size: 1.1rem;
-    line-height: 1.5;
+.contacto-hero h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 66px;
+    font-weight: 400;
+    color: var(--dorado);
+    margin-bottom: 18px;
+    text-shadow: 0 5px 14px rgba(0, 0, 0, 0.9);
 }
+
+.contacto-hero p {
+    color: var(--crema);
+    font-size: 20px;
+    line-height: 1.7;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.85);
+}
+
+/* CONTENEDOR PRINCIPAL */
 
 .contacto-contenedor {
+    background: var(--crema);
+    padding: 75px 10%;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
-    padding: 60px 10%;
     justify-content: center;
-    background-color: #fff;
 }
 
-.contacto-info, 
+/* TARJETAS */
+
+.contacto-info,
 .contacto-formulario {
     flex: 1;
-    min-width: 300px;
-    border: 2px solid #4fb8e6;
-    padding: 40px;
-    background-color: #fff;
+    min-width: 320px;
+    background: var(--pergamino);
+    border: 2px solid var(--cobre);
+    border-radius: 16px;
+    padding: 45px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    color: var(--negro-pirata);
 }
 
 .contacto-info h3,
 .contacto-formulario h3 {
-    font-size: 1.5rem;
-    color: #4fb8e6;
-    margin-bottom: 20px;
+    font-family: 'Pirata One', cursive;
+    font-size: 44px;
+    font-weight: 400;
+    color: var(--marron-oscuro);
     text-align: center;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.contacto-info h3::after,
+.contacto-formulario h3::after {
+    content: "";
+    display: block;
+    width: 95px;
+    height: 4px;
+    background: var(--dorado);
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* DATOS */
+
+.dato-contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 24px;
+}
+
+.icono-dato {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .contacto-info p {
-    color: #000;
-    line-height: 1.6;
-    margin-bottom: 10px;
+    color: var(--marron-oscuro);
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 .contacto-info strong {
-    color: #000;
+    color: var(--negro-pirata);
+    font-weight: 800;
 }
+
+.contacto-info small {
+    color: var(--marron-madera);
+}
+
+/* FORMULARIO */
 
 .grupo-input {
     display: flex;
-    flex-direction: column; 
-    margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 22px;
 }
 
 .grupo-input label {
-    font-weight: bold;
-    color: #000;
+    color: var(--negro-pirata);
+    font-weight: 700;
     margin-bottom: 8px;
 }
 
-.grupo-input input, 
+.grupo-input input,
 .grupo-input textarea {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    width: 100%;
+    background: var(--crema);
+    border: 2px solid var(--cobre);
+    color: var(--negro-pirata);
+    border-radius: 8px;
+    padding: 14px;
     font-family: inherit;
-    transition: border-color 0.3s;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.grupo-input input:focus, 
+.grupo-input input:focus,
 .grupo-input textarea:focus {
     outline: none;
-    border-color: #4fb8e6;
+    border-color: var(--dorado);
+    box-shadow: 0 0 8px rgba(217, 164, 65, 0.75);
 }
 
+.grupo-input input::placeholder,
+.grupo-input textarea::placeholder {
+    color: rgba(43, 20, 12, 0.55);
+}
+
+/* BOTÓN */
+
 .btn-enviar {
-    background-color: #ffa500;
-    color: #fff;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
     width: 100%;
-    transition: background-color 0.3s, transform 0.2s;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    border: none;
+    border-radius: 8px;
+    padding: 15px 22px;
+    font-size: 17px;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease;
 }
 
 .btn-enviar:hover {
-    background-color: #e67e22;
+    background: var(--cobre);
+    color: var(--blanco);
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .contacto-contenedor {
-        flex-direction: column;
-        padding: 40px 5%;
+.btn-enviar:active {
+    transform: scale(0.98);
+}
+
+/* SECCIÓN EXTRA */
+
+.contacto-extra {
+    background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-madera));
+    padding: 65px 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    border-top: 4px solid var(--dorado);
+}
+
+.extra-card {
+    position: relative;
+    background: var(--pergamino);
+    border: 2px solid var(--cobre);
+    border-radius: 16px;
+    padding: 35px;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.extra-card::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    background: rgba(217, 164, 65, 0.30);
+    border-radius: 50%;
+    top: -35px;
+    right: -35px;
+}
+
+.extra-card h3 {
+    position: relative;
+    z-index: 1;
+    font-family: 'Pirata One', cursive;
+    font-size: 38px;
+    font-weight: 400;
+    color: var(--marron-oscuro);
+    margin-bottom: 12px;
+}
+
+.extra-card p {
+    position: relative;
+    z-index: 1;
+    color: var(--negro-pirata);
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .contacto-hero {
+        min-height: auto;
+        padding: 75px 18px;
     }
-    
-    .contacto-info, .contacto-formulario {
+
+    .hero-contenido {
+        padding: 35px 25px;
+    }
+
+    .contacto-hero h2 {
+        font-size: 48px;
+    }
+
+    .contacto-hero p {
+        font-size: 17px;
+    }
+
+    .contacto-contenedor {
+        padding: 50px 6%;
+        flex-direction: column;
+    }
+
+    .contacto-info,
+    .contacto-formulario {
+        padding: 32px;
+    }
+
+    .contacto-extra {
+        grid-template-columns: 1fr;
+        padding: 50px 6%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-hero h2 {
+        font-size: 40px;
+    }
+
+    .hero-contenido {
+        padding: 28px 20px;
+    }
+
+    .contacto-info h3,
+    .contacto-formulario h3 {
+        font-size: 36px;
+    }
+
+    .dato-contacto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacto-info,
+    .contacto-formulario,
+    .extra-card {
         padding: 25px;
     }
-}
-
-.documento {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.documento .fila1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.documento select,
-.documento input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.documento input {
-    margin-bottom: 10px;
-}
-
-.documento label{
-    font-weight: bold;
 }
