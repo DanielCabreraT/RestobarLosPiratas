@@ -49,7 +49,8 @@ El proyecto presenta una web temática para un restobar con identidad visual pir
 - Paleta visual coherente con la temática pirata.
 
 ## Integrantes
--Ayala Uchofen Elvis Esmith
--Cabrera Tanchira Daniel Agustin
--Diaz Cumpa Leonardo Fabrisio
--Garnique Acosta Leonardo Jhampiere
+
+- Ayala Uchofen Elvis Esmith
+- Cabrera Tanchira Daniel Agustin
+- Diaz Cumpa Leonardo Fabrisio
+- Garnique Acosta Leonardo Jhampiere
