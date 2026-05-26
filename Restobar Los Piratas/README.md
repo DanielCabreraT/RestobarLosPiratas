@@ -50,7 +50,4 @@ El proyecto presenta una web temática para un restobar con identidad visual pir
 
 ## Integrantes
 
-- Integrante 1
-- Integrante 2
-- Integrante 3
-- Integrante 4
+
