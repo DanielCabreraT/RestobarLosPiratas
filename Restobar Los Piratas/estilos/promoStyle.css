@@ -78,3 +78,27 @@
     transform: translateY(-5px);
     box-shadow: 0 10px 20px #00000030;
 }
+
+.menu-carta h3 {
+    font-family: 'Pirata One', cursive;
+    font-size: 34px;
+    font-weight: 400;
+    color: var(--negro-pirata);
+    margin: 24px 18px 12px;
+}
+
+.menu-carta p {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: var(--negro-pirata);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.precio {
+    font-family: 'Pirata One', cursive;
+    display: block;
+    color: var(--cobre);
+    font-size: 32px;
+    font-weight: 400;
+    margin: 10px 0 28px;
+}
