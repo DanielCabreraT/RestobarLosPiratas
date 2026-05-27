@@ -143,3 +143,52 @@
     }
 }
 
+/* FILTROS */
+.galeria input[type="radio"] {
+    display: none;
+}
+
+.galeria-filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    padding: 10px 24px;
+    background: var(--pergamino);
+    color: var(--negro-pirata);
+    border: 2px solid var(--dorado);
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-filtro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#filtro-todos:checked ~ .galeria-filtros [for="filtro-todos"],
+#filtro-platos:checked ~ .galeria-filtros [for="filtro-platos"],
+#filtro-bebidas:checked ~ .galeria-filtros [for="filtro-bebidas"],
+#filtro-ambiente:checked ~ .galeria-filtros [for="filtro-ambiente"] {
+    background: var(--dorado, #D9A441);
+    color: var(--negro-pirata, #0B0B0B);
+    transform: scale(1.05);
+}
+
+.galeria-item {
+    transition: all 0.4s ease;
+}
+
+#filtro-platos:checked ~ .galeria-grid .galeria-item:not(.platos),
+#filtro-bebidas:checked ~ .galeria-grid .galeria-item:not(.bebidas),
+#filtro-ambiente:checked ~ .galeria-grid .galeria-item:not(.ambiente) {
+    display: none; 
+}

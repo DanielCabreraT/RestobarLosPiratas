@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/galeria.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -24,27 +26,38 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    
-    <main>
-        <section class="hero-galeria">
-            <div class="hero-galeria-contenido">
-                <span class="etiqueta-hero">Ambiente & gastronomía</span>
-                <h2>Vive la experiencia pirata</h2>
-                <p>
-                    Descubre la esencia de Los Piratas a través de nuestras imágenes. 
-                    Platos irresistibles, momentos inolvidables y el ambiente único que nos define.
-                </p>
-            </div>
-        </section>
 
+    <main>
         <section class="galeria">
-            <div class="galeria-grid">
-                <img src="imagenes/ceviche1.jpg" alt="Ceviche">
-                <img src="imagenes/parrilla1.jpg" alt="Parrilla">
-                <img src="imagenes/bebida1.jpg" alt="Bebida">
-                <img src="imagenes/ceviche2.jpg" alt="Ceviche">
-                <img src="imagenes/parrilla2.jpg" alt="Parrilla">
+            <input type="radio" id="filtro-todos" name="categoria" checked>
+            <input type="radio" id="filtro-platos" name="categoria">
+            <input type="radio" id="filtro-bebidas" name="categoria">
+            <input type="radio" id="filtro-ambiente" name="categoria">
+
+            <div class="galeria-filtros">
+                <label for="filtro-todos" class="btn-filtro">Todos</label>
+                <label for="filtro-platos" class="btn-filtro">Platos</label>
+                <label for="filtro-bebidas" class="btn-filtro">Bebidas</label>
+                <label for="filtro-ambiente" class="btn-filtro">Ambiente</label>
             </div>
+
+            <div class="galeria-grid">
+                <div class="galeria-item platos">
+                    <img src="imagenes/ceviche1.jpg" alt="Ceviche">
+                </div>
+                <div class="galeria-item platos">
+                    <img src="imagenes/parrilla1.jpg" alt="Parrilla">
+                </div>
+                <div class="galeria-item bebidas">
+                    <img src="imagenes/bebida1.jpg" alt="Bebida">
+                </div>
+                <div class="galeria-item platos">
+                    <img src="imagenes/ceviche2.jpg" alt="Ceviche">
+                </div>
+                <div class="galeria-item platos">
+                    <img src="imagenes/parrilla2.jpg" alt="Parrilla">
+                </div>
+                </div>
         </section>
     </main>
 
@@ -52,7 +65,7 @@
     <footer>
         <h3>LOS PIRATAS</h3>
         <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
-        
+
         <div class="foot">
             <div class="divfoot">
                 <h4>Navega</h4>
@@ -67,20 +80,22 @@
             <div>
                 <h4>Síguenos</h4>
                 <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagramLosPiratas"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png"
+                        alt="instagramLosPiratas"></a>
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
                 <img src="imagenes/yape-imagen.png" alt="Yape" class="metodo">
                 <img src="imagenes/visa.png" alt="Visa" class="metodo">
                 <img src="imagenes/mastercard.png" alt="MasterCard" class="metodo">
-            <div>
-                <h4>Libro de Reclamaciones</h4>
-                <a href="reclamaciones.html">
-                    <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones-37735.png" alt="libro"></a>
-                </a>
+                <div>
+                    <h4>Libro de Reclamaciones</h4>
+                    <a href="reclamaciones.html">
+                        <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones-37735.png"
+                                alt="libro"></a>
+                    </a>
+                </div>
             </div>
-        </div>
     </footer>
     <a href="#" class="btn-volver-arriba" aria-label="Volver al inicio">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock"
@@ -90,4 +105,5 @@
         </svg>
     </a>
 </body>
+
 </html>
