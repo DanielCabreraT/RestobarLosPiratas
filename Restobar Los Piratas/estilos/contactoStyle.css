@@ -317,28 +317,77 @@
 }
 
 @media (max-width: 480px) {
-    .contacto-hero h2 {
-        font-size: 40px;
+
+    .contacto-hero {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .contacto-hero::before {
+        font-size: 90px;
+        top: 20px;
+        left: 5%;
+    }
+
+    .contacto-hero::after {
+        inset: 12px;
     }
 
     .hero-contenido {
-        padding: 28px 20px;
+        padding: 25px 18px;
+        border-radius: 14px;
+    }
+
+    .contacto-hero h2 {
+        font-size: 38px;
+        line-height: 1.1;
+    }
+
+    .contacto-hero p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .contacto-contenedor {
+        padding: 35px 15px;
+        gap: 25px;
+    }
+
+    .contacto-info,
+    .contacto-formulario {
+        width: 100%;
+        min-width: 100%;
+        padding: 22px;
+        border-radius: 14px;
     }
 
     .contacto-info h3,
     .contacto-formulario h3 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 20px;
     }
 
-    .dato-contacto {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .contacto-info p {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
-    .contacto-info,
-    .contacto-formulario,
-    .extra-card {
-        padding: 25px;
+    .grupo-input {
+        margin-bottom: 18px;
+    }
+
+    .grupo-input label {
+        font-size: 14px;
+    }
+
+    .grupo-input input,
+    .grupo-input textarea {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .btn-enviar {
+        padding: 14px;
+        font-size: 15px;
     }
 }

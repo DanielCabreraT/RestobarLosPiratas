@@ -120,14 +120,58 @@
 }
 
 @media (max-width: 480px) {
-    .hero-galeria h2 {
-        font-size: 38px;
+
+    /* HERO */
+
+    .hero-galeria {
+        padding: 55px 12px;
+        min-height: auto;
     }
 
-    .hero-galeria-contenido,
-    .texto,
-    .tarjeta {
-        padding: 25px;
+    .hero-galeria::before {
+        font-size: 120px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .hero-galeria::after {
+        inset: 12px;
+    }
+
+    .hero-galeria-contenido {
+        padding: 22px 16px;
+    }
+
+    .etiqueta-hero {
+        font-size: 11px;
+        padding: 7px 14px;
+    }
+
+    .hero-galeria h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .hero-galeria p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    /* GALERÍA */
+
+    .galeria {
+        padding: 40px 4%;
+    }
+
+    .galeria-grid {
+        columns: 1 100%;
+        column-gap: 12px;
+    }
+
+    .galeria-grid img {
+        margin-bottom: 12px;
+        border-radius: 12px;
     }
 }
 

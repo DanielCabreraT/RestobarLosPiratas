@@ -84,3 +84,44 @@
     font-weight: 400;
     margin: 10px 0 28px;
 }
+
+@media (max-width: 480px) {
+
+    .categoria {
+        padding: 30px 12px;
+    }
+
+    .categoria h2 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 10px 0;
+    }
+
+    .menu-carta {
+        border-radius: 12px;
+    }
+
+    .menu-carta img {
+        height: 180px;
+    }
+
+    .menu-carta h3 {
+        font-size: 28px;
+        margin: 18px 12px 10px;
+    }
+
+    .menu-carta p {
+        font-size: 14px;
+        padding: 0 14px;
+    }
+
+    .precio {
+        font-size: 28px;
+        margin: 12px 0 20px;
+    }
+}
