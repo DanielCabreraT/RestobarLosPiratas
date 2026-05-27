@@ -1,0 +1,133 @@
+
+.hero-galeria {
+    position: relative;
+    min-height: 430px;
+    padding: 90px 20px;
+    background: 
+        linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.90)),
+        url("../imagenes/parrilla1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid var(--dorado);
+    overflow: hidden;
+    padding: 160px 20px 120px;
+}
+
+.hero-galeria::before {
+    content: "☠";
+    position: absolute;
+    font-size: 210px;
+    color: rgba(255, 243, 224, 0.08);
+    top: 35px;
+    left: 8%;
+}
+
+.hero-galeria::after {
+    content: "";
+    position: absolute;
+    inset: 25px;
+    border: 2px solid rgba(217, 164, 65, 0.45);
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+.hero-galeria-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    background: rgba(11, 11, 11, 0.45);
+    padding: 45px 55px;
+    border-radius: 18px;
+    border: 2px solid var(--dorado);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+}
+
+.etiqueta-hero {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero-galeria h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: var(--crema);
+}
+
+.hero-galeria p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: var(--crema);
+}
+
+.galeria {
+    padding: 70px 5%;
+}
+
+.galeria-grid {
+    columns: 5 250px;
+    column-gap: 16px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    break-inside: avoid;
+    border: 3px solid var(--cobre);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 900px) {
+    .hero-galeria {
+        padding: 70px 18px;
+        min-height: auto;
+    }
+
+    .hero-galeria-contenido {
+        padding: 35px 25px;
+    }
+
+    .hero-galeria h2 {
+        font-size: 46px;
+    }
+
+    .hero-galeria p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-galeria h2 {
+        font-size: 38px;
+    }
+
+    .hero-galeria-contenido,
+    .texto,
+    .tarjeta {
+        padding: 25px;
+    }
+}
+
