@@ -142,6 +142,10 @@ section h2 {
     gap: 30px;
 }
 
+.tarjeta-wrapper {
+    animation: aparecer 2s ease-out forwards;
+}
+
 .tarjeta-destacada {
     position: relative;
     background: var(--pergamino);
@@ -150,6 +154,7 @@ section h2 {
     overflow: hidden;
     box-shadow: 0 5px 14px var(--sombra);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
 }
 
 .tarjeta-destacada::before {
@@ -323,11 +328,32 @@ section h2 {
 .hero-inicio .hero-contenido h2 {
     color: var(--crema);
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85),
-                 0 0 14px rgba(217, 164, 65, 0.45);
+                0 0 14px rgba(217, 164, 65, 0.45);
     opacity: 1;
 }
 
 .hero-inicio .hero-contenido p {
     color: var(--crema);
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tarjetas-grid article:nth-child(1) { 
+    animation-delay: 0.2s; 
+}
+.tarjetas-grid article:nth-child(2) { 
+    animation-delay: 0.4s; 
+}
+.tarjetas-grid article:nth-child(3) { 
+    animation-delay: 0.6s; 
 }
