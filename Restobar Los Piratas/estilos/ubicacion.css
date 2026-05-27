@@ -132,3 +132,79 @@
     height: 350px;
     border-radius: 16px;
 }
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .hero-local {
+        padding: 55px 12px;
+        min-height: auto;
+    }
+
+    .hero-local::before {
+        font-size: 120px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .hero-local::after {
+        inset: 12px;
+    }
+
+    .hero-local-contenido {
+        padding: 22px 16px;
+    }
+
+    .hero-local h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .hero-local p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+
+    /* LOCAL */
+
+    .local {
+        width: 95%;
+        margin: 35px auto;
+    }
+
+    .info-local {
+        padding: 22px 16px;
+        gap: 18px;
+    }
+
+    .info-local h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .info-local p {
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .imagen-local img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        padding: 12px 18px;
+        font-size: 14px;
+    }
+
+    .mapa-local iframe {
+        height: 240px;
+        border-radius: 12px;
+    }
+}
