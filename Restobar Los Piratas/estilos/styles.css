@@ -155,18 +155,19 @@ footer a:hover {
     margin-bottom: 8px;
 }
 
-.foot img {
-    width: 60px;
-    height: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+.foot a{
+    width: 50px;
 }
 
-.foot img:hover {
-    transform: scale(1.1);
+.foot .lib{
+    width: 125px;
 }
 
-@media (max-width: 1100px) {
+.foot .metodo{
+    width: 50px;
+}
+
+@media (max-width: 1200px) {
     header {
         flex-direction: column;
         padding: 22px;
