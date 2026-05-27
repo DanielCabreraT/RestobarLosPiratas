@@ -21,6 +21,8 @@ El proyecto presenta una web temática para un restobar con identidad visual pir
 - `menu.html`: carta con ceviches, bebidas y parrillas.
 - `promociones.html`: promociones destacadas.
 - `nosotros.html`: historia, misión y visión.
+- `ubicacion.html`: mapa y dirección del restobar para llegar fácilmente.
+- `galeria.html`: fotos del local, platos y ambiente del restobar.
 - `contacto.html`: datos de contacto y formulario.
 
 ## Paleta de colores
