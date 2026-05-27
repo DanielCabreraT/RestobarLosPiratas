@@ -22,6 +22,32 @@ html {
     scroll-behavior: smooth;
 }
 
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--dorado);
+    color: var(--negro-pirata);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.btn-volver-arriba:hover {
+    background-color: var(--cobre);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background: var(--crema);
@@ -167,7 +193,7 @@ footer a:hover {
     transform: scale(1.1);
 }
 
-.divfoot a{
+.divfoot a {
     position: relative;
     text-decoration: none;
     color: var(--dorado);
