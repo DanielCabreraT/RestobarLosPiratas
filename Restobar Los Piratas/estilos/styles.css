@@ -22,6 +22,32 @@ html {
     scroll-behavior: smooth;
 }
 
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--dorado);
+    color: var(--negro-pirata);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.btn-volver-arriba:hover {
+    background-color: var(--cobre);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
 body {
     font-family: 'Poppins', Arial, sans-serif;
     background: var(--crema);
@@ -95,6 +121,7 @@ header nav a::after {
 
 header nav a:hover {
     color: var(--cobre);
+    transform: translateY(-3px) scale(1.1);
 }
 
 header nav a:hover::after {
@@ -155,19 +182,32 @@ footer a:hover {
     margin-bottom: 8px;
 }
 
-.foot a{
-    width: 50px;
+.foot img {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-.foot .lib{
-    width: 125px;
+.foot img:hover {
+    transform: scale(1.1);
 }
 
-.foot .metodo{
-    width: 50px;
+.divfoot a {
+    position: relative;
+    text-decoration: none;
+    color: var(--dorado);
+    font-size: 16px;
+    font-weight: 700;
+    transition: color 0.3s ease;
 }
 
-@media (max-width: 1200px) {
+.divfoot a:hover {
+    color: var(--pergamino);
+    transform: translateY(-3px) scale(1.1);
+}
+
+@media (max-width: 1100px) {
     header {
         flex-direction: column;
         padding: 22px;

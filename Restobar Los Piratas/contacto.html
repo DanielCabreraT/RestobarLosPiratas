@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/contactoStyle.css">
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -33,11 +35,12 @@
         </section>
 
         <section class="contacto-contenedor">
-            
+
             <article class="contacto-info">
                 <h3>Nuestros Datos</h3>
                 <br>
-                <p><strong>Ubicación:</strong> Santa Rosa, Manzana 8 Lote 49, Chiclayo (Ref. al lado del terminal pesquero Ecomphisa).</p>
+                <p><strong>Ubicación:</strong> Santa Rosa, Manzana 8 Lote 49, Chiclayo (Ref. al lado del terminal
+                    pesquero Ecomphisa).</p>
                 <br>
                 <p><strong>Teléfono:</strong> 912-262-484</p>
                 <br>
@@ -52,17 +55,17 @@
                 <form action="#" method="POST" id="form-reserva">
                     <div class="grupo-input">
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: John Doe" required>
                     </div>
 
                     <div class="grupo-input">
                         <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="capitan@perlanegra.com" required>
                     </div>
 
                     <div class="grupo-input">
                         <label for="mensaje">Mensaje o Reserva:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn-enviar">Enviar Mensaje</button>
@@ -75,9 +78,9 @@
     <footer>
         <h3>LOS PIRATAS</h3>
         <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
-        
+
         <div class="foot">
-            <div>
+            <div class="divfoot">
                 <h4>Navega</h4>
                 <a href="index.html">INICIO</a>
                 <a href="menu.html">MENÚ</a>
@@ -90,7 +93,8 @@
             <div>
                 <h4>Síguenos</h4>
                 <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagramLosPiratas"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png"
+                        alt="instagramLosPiratas"></a>
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
@@ -101,10 +105,19 @@
             <div>
                 <h4>Libro de Reclamaciones</h4>
                 <a href="reclamaciones.html">
-                <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones-37735.png" alt="libro"></a>
+                    <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones-37735.png"
+                            alt="libro"></a>
                 </a>
             </div>
         </div>
     </footer>
+    <a href="#" class="btn-volver-arriba" aria-label="Volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm6 0h-5v1h5z" />
+        </svg>
+    </a>
 </body>
+
 </html>

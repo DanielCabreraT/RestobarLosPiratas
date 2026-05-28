@@ -109,12 +109,13 @@ section h2 {
 
 .btn-principal:hover,
 .btn-secundario:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .btn-principal:hover {
     background: var(--cobre);
     color: var(--blanco);
+cursor: pointer;
 }
 
 .btn-secundario:hover {
