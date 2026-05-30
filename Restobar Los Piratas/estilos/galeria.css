@@ -133,17 +133,15 @@
 
 @media (max-width: 480px) {
 
-    /* HERO */
-
     .hero-galeria {
-        padding: 55px 12px;
+        padding: 80px 15px 70px;
         min-height: auto;
     }
 
     .hero-galeria::before {
         font-size: 120px;
         top: 20px;
-        left: 10px;
+        left: 5%;
     }
 
     .hero-galeria::after {
@@ -151,7 +149,8 @@
     }
 
     .hero-galeria-contenido {
-        padding: 22px 16px;
+        padding: 22px 18px;
+        border-radius: 14px;
     }
 
     .etiqueta-hero {
@@ -165,25 +164,8 @@
     }
 
     .hero-galeria p {
-        font-size: 14px;
-        line-height: 1.6;
-        margin-bottom: 10px;
-    }
-
-    /* GALERÍA */
-
-    .galeria {
-        padding: 40px 4%;
-    }
-
-    .galeria-grid {
-        columns: 1 100%;
-        column-gap: 12px;
-    }
-
-    .galeria-grid img {
-        margin-bottom: 12px;
-        border-radius: 12px;
+        font-size: 15px;
+        line-height: 1.5;
     }
 }
 
@@ -237,77 +219,3 @@
     display: none; 
 }
 
-@media (max-width: 480px) {
-
-    /* HERO */
-    .hero-galeria {
-        padding: 120px 15px 80px;
-        min-height: auto;
-    }
-
-    .hero-galeria::before {
-        font-size: 120px;
-        top: 20px;
-        left: 5%;
-    }
-
-    .hero-galeria::after {
-        inset: 12px;
-    }
-
-    .hero-galeria-contenido {
-        padding: 22px 18px;
-        border-radius: 14px;
-    }
-
-    .hero-galeria h2 {
-        font-size: 34px;
-        line-height: 1.1;
-    }
-
-    .hero-galeria p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .etiqueta-hero {
-        font-size: 12px;
-        padding: 6px 14px;
-    }
-
-    /* GALERÍA */
-    .galeria {
-        padding: 45px 15px;
-    }
-
-    .galeria-grid {
-        columns: 1 100%;
-        column-gap: 0;
-    }
-
-    .galeria-grid img {
-        border-radius: 12px;
-        margin-bottom: 14px;
-    }
-
-    /* FILTROS */
-    .galeria-filtros {
-        gap: 10px;
-        margin-bottom: 25px;
-    }
-
-    .btn-filtro {
-        padding: 8px 16px;
-        font-size: 14px;
-        width: 100%;
-        text-align: center;
-    }
-
-    /* BOTÓN VOLVER ARRIBA */
-    .btn-volver-arriba {
-        width: 45px;
-        height: 45px;
-        bottom: 18px;
-        right: 18px;
-    }
-}
