@@ -63,28 +63,29 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
-    padding: 24px 55px;
+    gap: 20px;
+    padding: 24px 3%;
     background: var(--crema);
     border-bottom: 4px solid var(--dorado);
     box-shadow: 0 4px 14px var(--sombra);
+    flex-wrap: wrap;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 15px;
 }
 
 .logo img {
-    width: 220px;
+    width: clamp(150px, 15vw, 220px);
     height: auto;
     object-fit: contain;
 }
 
 .logo h1 {
     font-family: 'Pirata One', cursive;
-    font-size: 46px;
+    font-size: clamp(30px, 3vw, 46px); 
     font-weight: 400;
     color: var(--negro-pirata);
     letter-spacing: 1px;
@@ -94,7 +95,7 @@ header {
 header nav {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: clamp(10px, 1.5vw, 24px); 
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -211,6 +212,7 @@ footer a:hover {
     header {
         flex-direction: column;
         padding: 22px;
+        
     }
 
     .logo {

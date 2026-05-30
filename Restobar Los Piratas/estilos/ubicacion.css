@@ -18,6 +18,7 @@
 }
 
 .hero-local::before {
+    content: "☠";
     position: absolute;
     font-size: 210px;
     color: rgba(255, 243, 224, 0.08);
