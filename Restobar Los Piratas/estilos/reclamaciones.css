@@ -1,0 +1,159 @@
+.contenedor-reclamaciones {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 15px var(--sombra); 
+    border-radius: 8px;
+    border: 1px solid var(--pergamino);
+}
+
+.banner-reclamaciones {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--cobre);
+    padding-bottom: 20px;
+}
+
+.banner-reclamaciones h2 {
+    color: var(--marron-oscuro);
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.banner-reclamaciones p {
+    color: var(--marron-madera);
+    font-size: 15px;
+}
+
+/*FIELDSETS Y LEGENDS*/
+fieldset {
+    border: 1px solid var(--pergamino);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: var(--blanco);
+}
+
+legend {
+    background-color: var(--marron-madera);
+    color: var(--crema);
+    padding: 6px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 5px var(--sombra);
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.fila-formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+label {
+    font-weight: bold;
+    color: var(--marron-oscuro);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid var(--pergamino);
+    background-color: var(--blanco);
+    color: var(--negro-pirata);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.3s ease; 
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--cobre);
+    box-shadow: 0 0 8px rgba(166, 75, 34, 0.3); /* Resplandor color cobre */
+}
+
+/* OPCIONES RADIO Y CHECKBOX */
+.opciones-radio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.radio-label, .grupo-checkbox label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    color: var(--negro-pirata);
+    cursor: pointer;
+}
+
+.radio-label input, .grupo-checkbox input {
+    margin-right: 10px;
+    transform: scale(1.2); 
+}
+
+.grupo-checkbox {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: var(--pergamino); 
+    border-left: 4px solid var(--cobre);
+    border-radius: 4px;
+}
+
+.grupo-checkbox label {
+    color: var(--marron-oscuro);
+    font-weight: bold;
+    font-size: 13.5px;
+}
+
+/* BOTÓN */
+.contenedor-boton {
+    text-align: center;
+}
+
+.btn-enviar {
+    background-color: var(--cobre);
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--sombra);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: var(--marron-madera);
+    transform: translateY(-3px); 
+}
+
+@media screen and (max-width: 600px) {
+    .fila-formulario {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .contenedor-reclamaciones {
+        margin: 20px 10px;
+        padding: 20px 15px;
+    }
+}
