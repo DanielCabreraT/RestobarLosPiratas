@@ -7,6 +7,7 @@
     <title>Contacto - Los Piratas Restobar</title>
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/contactoStyle.css">
+    <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -64,11 +65,15 @@
                     </div>
 
                     <div class="grupo-input">
-                        <label for="mensaje">Mensaje o Reserva:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                      <label for="mensaje">Mensaje o Reserva:</label>
+
+                      <div class="contenedor-textarea">
+                         <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí...(Max.300 caracteres)" maxlength="300" required></textarea>
+                         <span id="numero-letras" class="numero-letras">0/300</span>
+                      </div>
                     </div>
 
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    <button type="submit" class="btn-enviar" id="btnEnviar">Enviar Mensaje</button>
                 </form>
             </article>
 
