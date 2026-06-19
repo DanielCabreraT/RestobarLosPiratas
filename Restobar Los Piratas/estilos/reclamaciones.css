@@ -157,3 +157,11 @@ textarea:focus {
         padding: 20px 15px;
     }
 }
+
+#monto {
+    height: 45px;
+    padding: 0 12px;
+    font-size: 16px;
+    border: 1px solid var(--cobre);
+    border-radius: 4px;
+}
