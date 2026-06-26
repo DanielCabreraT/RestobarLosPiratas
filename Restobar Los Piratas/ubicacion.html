@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="imagenes/logo.png" alt="logo">
+            <img src="imagenes/logo/logo.png" alt="logo">
             <h1>Los Piratas Restobar</h1>
         </div>
         <nav>
@@ -23,54 +23,113 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    
+
     <main>
         <section class="hero-local">
             <div class="hero-local-contenido">
-                <h2>Nuestro Local</h2>
+                <h2>Nuestra Ubicación</h2>
                 <p>
-                    Comidas, Bebidas y parrillas
+                    Te esperamos en Pimentel, donde el mar y el sabor se unen.
                 </p>
             </div>
         </section>
+
         <section class="local">
-    
+
             <div class="info-local">
-                <div class="imagen-local">
-                    <img src="imagenes/logo.png" alt="localFoto">
+
+                <div class="local-cabecera">
+                    <div class="logo-local">
+                        <img src="imagenes/logo/logo.png" alt="Logo Los Piratas">
+                    </div>
+                    <div class="titulo-local">
+                        <h3>Sede Pimentel</h3>
+                        <p class="eslogan">Sabor, aventura y tradición cerca del mar.</p>
+                    </div>
                 </div>
-                <div>
-                    <h3>Sede Pimentel</h3>
 
-                    <p>Santa Rosa, Manzana 8 Lote 49, Chiclayo
-                    (Ref. al lado del terminal pesquero Ecomphisa).</p>
+                <div class="datos-local">
+                    <div class="dato">
+                        <span class="icono">📍</span>
+                        <div>
+                            <strong>Dirección</strong>
+                            <p>Santa Rosa, Manzana 8 Lote 49, Chiclayo<br>
+                                (Ref. al lado del terminal pesquero Ecomphisa).</p>
+                        </div>
+                    </div>
 
-                    <p>
-                        <a href="https://wa.me/51912262484" class="btn-whatsapp" target="_blank">
+                    <div class="dato">
+                        <span class="icono">📞</span>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p><a href="tel:+51912262484">912 262 484</a></p>
+                        </div>
+                    </div>
+
+                    <div class="dato">
+                        <span class="icono">🕒</span>
+                        <div>
+                            <strong>Horario de atención</strong>
+                            <p>Todos los días de 7:00 am a 11:00 pm</p>
+                        </div>
+                    </div>
+
+                    <div class="dato">
+                        <span class="icono">⚓</span>
+                        <div>
+                            <strong>Atención a cargo de</strong>
+                            <p>Estany Marisol Acosta Torres</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="botones-local">
+                    <a href="https://wa.me/51912262484" class="btn-whatsapp" target="_blank">
                         WhatsApp Pimentel
-                        </a>
-                    </p>
-
-                    
+                    </a>
+                    <a href="https://www.google.com/maps?q=-6.871941,-79.926569" class="btn-mapa" target="_blank">
+                        Cómo llegar
+                    </a>
                 </div>
+
                 <div class="mapa-local">
                     <iframe
                         src="https://www.google.com/maps?q=-6.871941,-79.926569&z=19&output=embed"
                         width="100%"
-                        height="300"
+                        height="350"
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy">
                     </iframe>
                 </div>
+
             </div>
+
+            <div class="tarjetas-extras">
+                <div class="tarjeta-extra">
+                    <div class="tarjeta-extra-icono">🍤</div>
+                    <h4>Comida marina</h4>
+                    <p>Ceviches, sudados, jaleas y más, preparados al momento.</p>
+                </div>
+                <div class="tarjeta-extra">
+                    <div class="tarjeta-extra-icono">🍺</div>
+                    <h4>Bebidas frías</h4>
+                    <p>Cervezas, gaseosas y energizantes siempre bien helados.</p>
+                </div>
+                <div class="tarjeta-extra">
+                    <div class="tarjeta-extra-icono">🎶</div>
+                    <h4>Show en vivo</h4>
+                    <p>Ambiente temático con animación para que la pases genial.</p>
+                </div>
+            </div>
+
         </section>
     </main>
 
     <footer>
         <h3>LOS PIRATAS</h3>
         <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
-        
+
         <div class="foot">
             <div class="divfoot">
                 <h4>Navega</h4>
@@ -84,20 +143,18 @@
             </div>
             <div>
                 <h4>Síguenos</h4>
-                <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagramLosPiratas"></a>
+                <a href="https://facebook.com" target="_blank"><img src="imagenes/redes/facebook.png" alt="facebookLosPiratas"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/redes/instagram.png" alt="instagramLosPiratas"></a>
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
-                <img src="imagenes/yape.png" alt="Yape" class="metodo">
-                <img src="imagenes/visa.png" alt="Visa" class="metodo">
-                <img src="imagenes/mastercard.png" alt="MasterCard" class="metodo">
+                <img src="imagenes/pagos/yape.png" alt="Yape" class="metodo">
+                <img src="imagenes/pagos/visa.png" alt="Visa" class="metodo">
+                <img src="imagenes/pagos/mastercard.png" alt="MasterCard" class="metodo">
             </div>
             <div>
                 <h4>Libro de Reclamaciones</h4>
-                <a href="reclamaciones.html">
-                    <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones.png" alt="libro"></a>
-                </a>
+                <a href="reclamaciones.html" class="lib"><img src="imagenes/otros/libro_de_reclamaciones_icono.png" alt="libro"></a>
             </div>
         </div>
     </footer>
@@ -105,7 +162,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-capslock"
             viewBox="0 0 16 16">
             <path fill-rule="evenodd"
-                d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm6 0h-5v1h5z" />
+                d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638-.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm6 0h-5v1h5z" />
         </svg>
     </a>
 </body>

@@ -1,11 +1,10 @@
-
 .hero-local {
     position: relative;
     min-height: 430px;
     padding: 90px 20px;
-    background: 
+    background:
         linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.90)),
-        url("../imagenes/parrilla1.jpg");
+        url("../imagenes/otros/zona_bar.jpeg");
     background-size: cover;
     background-position: center;
     color: var(--crema);
@@ -18,7 +17,7 @@
 }
 
 .hero-local::before {
-    content: "☠";
+    content: "⚓";
     position: absolute;
     font-size: 210px;
     color: rgba(255, 243, 224, 0.08);
@@ -53,6 +52,8 @@
     font-weight: 400;
     margin-bottom: 18px;
     color: var(--crema);
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.85),
+                 0 0 14px rgba(217, 164, 65, 0.45);
 }
 
 .hero-local p {
@@ -60,78 +61,276 @@
     line-height: 1.7;
     margin-bottom: 25px;
     color: var(--crema);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.75);
 }
 
-.local{
+.local {
     width: 90%;
     margin: 60px auto;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
-    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    gap: 35px;
+    align-items: start;
 }
 
-.info-local{
+.info-local {
     width: 100%;
-    max-width: 900px;
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     gap: 25px;
     background: var(--pergamino);
     padding: 35px;
     border-radius: 16px;
     border: 2px solid var(--cobre);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CABECERA LOCAL */
+
+.local-cabecera {
+    display: flex;
     align-items: center;
+    gap: 20px;
+    padding-bottom: 18px;
+    border-bottom: 2px dashed var(--cobre);
 }
 
-.info-local h3{
+.logo-local {
+    flex-shrink: 0;
+    background: var(--crema);
+    border: 3px solid var(--dorado);
+    border-radius: 50%;
+    padding: 8px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-local img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.titulo-local h3 {
+    font-family: 'Pirata One', cursive;
     font-size: 42px;
-    margin-bottom: 20px;
+    font-weight: 400;
     color: var(--marron-oscuro);
+    line-height: 1.1;
+    margin-bottom: 4px;
 }
 
-.info-local p{
-    margin-bottom: 15px;
-    line-height: 1.7;
-    font-size: 17px;
+.titulo-local .eslogan {
+    color: var(--cobre);
+    font-style: italic;
+    font-size: 15px;
+    margin: 0;
 }
 
-.btn-whatsapp{
+/* DATOS */
+
+.datos-local {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+}
+
+.dato {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--crema);
+    border: 2px solid var(--dorado);
+    border-radius: 12px;
+    padding: 16px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dato:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.dato .icono {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dato strong {
     display: block;
-    margin-top: 15px;
-    padding: 14px 24px;
-    background: #25D366;
+    color: var(--marron-oscuro);
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.dato p {
+    margin: 0;
+    color: var(--negro-pirata);
+    font-size: 14.5px;
+    line-height: 1.55;
+}
+
+.dato a {
+    color: var(--cobre);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.dato a:hover {
+    color: var(--marron-madera);
+    text-decoration: underline;
+}
+
+/* BOTONES */
+
+.botones-local {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-whatsapp,
+.btn-mapa {
+    display: inline-block;
+    padding: 14px 28px;
     color: white;
     text-decoration: none;
     border-radius: 10px;
     font-weight: bold;
-    transition: 0.3s;
-    margin: 15px auto;
-    width: fit-content;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    border: none;
+    text-align: center;
 }
 
-.btn-whatsapp:hover{
-    transform: scale(1.05);
+.btn-whatsapp {
+    background: #25D366;
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
 }
 
-.imagen-local img{
+.btn-mapa {
+    background: var(--cobre);
+    box-shadow: 0 4px 10px rgba(166, 75, 34, 0.4);
+}
 
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
+.btn-whatsapp:hover,
+.btn-mapa:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+}
+
+.btn-mapa:hover {
+    background: var(--marron-madera);
+}
+
+/* MAPA */
+
+.mapa-local {
+    width: 100%;
+    border: 3px solid var(--dorado);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.mapa-local iframe {
+    width: 100%;
+    height: 350px;
     display: block;
 }
 
-.mapa-local{
-    width: 100%;
+/* TARJETAS EXTRAS */
+
+.tarjetas-extras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.mapa-local iframe{
-    width: 100%;
-    height: 350px;
+.tarjeta-extra {
+    background: var(--pergamino);
+    border: 2px solid var(--cobre);
     border-radius: 16px;
+    padding: 28px 22px;
+    text-align: center;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-extra:hover {
+    transform: translateY(-4px);
+}
+
+.tarjeta-extra::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: rgba(217, 164, 65, 0.25);
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+}
+
+.tarjeta-extra-icono {
+    font-size: 38px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta-extra h4 {
+    font-family: 'Pirata One', cursive;
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--marron-oscuro);
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta-extra p {
+    color: var(--negro-pirata);
+    font-size: 14.5px;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .local {
+        grid-template-columns: 1fr;
+    }
+
+    .datos-local {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjetas-extras {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .tarjeta-extra {
+        flex: 1 1 200px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,6 +372,7 @@
     .local {
         width: 95%;
         margin: 35px auto;
+        gap: 25px;
     }
 
     .info-local {
@@ -180,32 +380,56 @@
         gap: 18px;
     }
 
-    .info-local h3 {
-        font-size: 30px;
+    .local-cabecera {
+        flex-direction: column;
         text-align: center;
+        gap: 12px;
     }
 
-    .info-local p {
+    .titulo-local h3 {
+        font-size: 32px;
+    }
+
+    .titulo-local .eslogan {
         font-size: 14px;
-        text-align: center;
-        line-height: 1.7;
     }
 
-    .imagen-local img {
-        width: 170px;
-        height: 170px;
+    .datos-local {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
 
-    .btn-whatsapp {
+    .dato {
+        padding: 14px;
+    }
+
+    .dato .icono {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .botones-local {
+        flex-direction: column;
         width: 100%;
-        max-width: 250px;
-        text-align: center;
-        padding: 12px 18px;
-        font-size: 14px;
+    }
+
+    .btn-whatsapp,
+    .btn-mapa {
+        width: 100%;
+        max-width: 280px;
     }
 
     .mapa-local iframe {
         height: 240px;
         border-radius: 12px;
+    }
+
+    .tarjetas-extras {
+        flex-direction: column;
+    }
+
+    .tarjeta-extra {
+        padding: 22px 18px;
     }
 }

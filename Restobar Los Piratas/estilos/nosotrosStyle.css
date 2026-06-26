@@ -6,7 +6,7 @@
     padding: 90px 20px;
     background: 
         linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.90)),
-        url("../imagenes/parrilla1.jpg");
+        url("../imagenes/otros/show_en_vivo.jpeg");
     background-size: cover;
     background-position: center;
     color: var(--crema);
@@ -105,18 +105,47 @@
     align-items: stretch;
 }
 
+.historia.show-en-vivo {
+    background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-madera));
+    padding: 40px;
+    border-radius: 18px;
+    border: 3px solid var(--dorado);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+.historia.show-en-vivo .texto {
+    background: var(--pergamino);
+    border: 2px solid var(--dorado);
+}
+
+.historia.show-en-vivo .texto h3 {
+    color: var(--marron-oscuro);
+}
+
+.historia.show-en-vivo .texto p {
+    color: var(--negro-pirata);
+}
+
 .imagen {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .imagen img {
     width: 100%;
-    height: 100%;
-    min-height: 360px;
+    max-width: 380px;
+    aspect-ratio: 1 / 1;
+    height: auto;
     object-fit: cover;
     border-radius: 16px;
     border: 3px solid var(--cobre);
     box-shadow: 0 6px 16px var(--sombra);
+}
+
+.historia.show-en-vivo .imagen img {
+    border-color: var(--dorado);
 }
 
 .texto {
@@ -209,12 +238,16 @@
         flex-direction: column;
     }
 
+    .historia.show-en-vivo {
+        padding: 25px 20px;
+    }
+
     .info {
         grid-template-columns: 1fr;
     }
 
     .imagen img {
-        min-height: 260px;
+        max-width: 320px;
     }
 }
 
@@ -274,7 +307,7 @@
     }
 
     .imagen img {
-        min-height: 220px;
+        max-width: 260px;
     }
 
     .texto {

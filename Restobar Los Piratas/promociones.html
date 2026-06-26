@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Piratas Restobar</title>
+    <title>Promociones - Los Piratas Restobar</title>
     <link rel="stylesheet" href="estilos/styles.css">
-    <link rel="stylesheet" href="estilos/promoStyle.css">
+    <link rel="stylesheet" href="estilos/menuStyle.css">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="imagenes/logo.png" alt="logo">
+            <img src="imagenes/logo/logo.png" alt="logo">
             <h1>Los Piratas Restobar</h1>
         </div>
 
@@ -24,44 +24,65 @@
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    
+
     <main>
-        <section id="ceviche" class="categoria">
+        <section class="categoria">
             <h2>Promociones</h2>
+            <p style="text-align:center; margin: 10px 30px 25px; color: var(--marron-oscuro); font-size:17px;">
+                Aprovecha las mejores ofertas de la semana. ¡Buen sabor al mejor precio!
+            </p>
             <div class="grid">
-                <div class="menu-carta">
-                    <img src="imagenes/ceviche1.jpg" alt="Ceviche">
-                    <h3>Ceviche Clásico</h3>
-                    <p>Fresco pescado del día con limón y ají.</p>
-                    <span class="precio">S/ 15.00</span>
-                </div>
 
                 <div class="menu-carta">
-                    <img src="imagenes/ceviche2.jpg" alt="Ceviche">
-                    <h3>Ceviche Mixto</h3>
-                    <p>Con mariscos frescos y leche de tigre.</p>
+                    <img src="imagenes/comidas/ceviche_de_caballa_fresca.png" alt="Ceviche de Caballa">
+                    <h3>2x1 Ceviche de Caballa</h3>
+                    <p>Lunes y martes, lleva dos ceviches por el precio de uno.</p>
                     <span class="precio">S/ 25.00</span>
                 </div>
+
                 <div class="menu-carta">
-                    <img src="imagenes/parrilla1.jpg" alt="Ceviche">
-                    <h3>Parrilla Familiar</h3>
-                    <p>Fresco pescado del día con limón y ají.</p>
-                    <span class="precio">S/ 45.00</span>
+                    <img src="imagenes/comidas/arroz_con_mariscos.png" alt="Arroz con Mariscos">
+                    <h3>Arroz con Mariscos</h3>
+                    <p>Acompañado de chicha morada gratis los jueves.</p>
+                    <span class="precio">S/ 28.00</span>
                 </div>
 
                 <div class="menu-carta">
-                    <img src="imagenes/parrilla2.jpg" alt="Ceviche">
-                    <h3>Parrilla personal</h3>
-                    <p>Con mariscos frescos y leche de tigre.</p>
-                    <span class="precio">S/ 15.00</span>
+                    <img src="imagenes/comidas/jalea_de_pescado.png" alt="Jalea de Pescado">
+                    <h3>Jalea Familiar</h3>
+                    <p>Jalea grande para compartir 4 personas, precio especial.</p>
+                    <span class="precio">S/ 55.00</span>
                 </div>
+
+                <div class="menu-carta">
+                    <img src="imagenes/comidas/parihuela_chiclayana.png" alt="Parihuela Chiclayana">
+                    <h3>Parihuela + Cerveza</h3>
+                    <p>Parihuela con cerveza bien fría incluida.</p>
+                    <span class="precio">S/ 42.00</span>
+                </div>
+
+                <div class="menu-carta">
+                    <img src="imagenes/comidas/chicharron_de_calamar.png" alt="Chicharrón de Calamar">
+                    <h3>Chicharrón de Calamar</h3>
+                    <p>Con yuca dorada y limonada frozen al 2x1 los viernes.</p>
+                    <span class="precio">S/ 28.00</span>
+                </div>
+
+                <div class="menu-carta">
+                    <img src="imagenes/comidas/seco_de_cabrito_con_frijoles.png" alt="Seco de Cabrito">
+                    <h3>Seco de Cabrito</h3>
+                    <p>Plato completo con frijoles, arroz y refresco a precio promo.</p>
+                    <span class="precio">S/ 26.00</span>
+                </div>
+
             </div>
         </section>
     </main>
+
     <footer>
         <h3>LOS PIRATAS</h3>
         <p>El mejor restobar con temática pirata. Donde el mar se encuentra con el sabor.</p>
-        
+
         <div class="foot">
             <div class="divfoot">
                 <h4>Navega</h4>
@@ -75,18 +96,18 @@
             </div>
             <div>
                 <h4>Síguenos</h4>
-                <a href="https://facebook.com" target="_blank"><img src="imagenes/facebook.png" alt=""></a>
-                <a href="https://instagram.com" target="_blank"><img src="imagenes/instagram.png" alt="instagramLosPiratas"></a>
+                <a href="https://facebook.com" target="_blank"><img src="imagenes/redes/facebook.png" alt="facebookLosPiratas"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/redes/instagram.png" alt="instagramLosPiratas"></a>
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
-                <img src="imagenes/yape.png" alt="Yape" class="metodo">
-                <img src="imagenes/visa.png" alt="Visa" class="metodo">
-                <img src="imagenes/mastercard.png" alt="MasterCard" class="metodo">
+                <img src="imagenes/pagos/yape.png" alt="Yape" class="metodo">
+                <img src="imagenes/pagos/visa.png" alt="Visa" class="metodo">
+                <img src="imagenes/pagos/mastercard.png" alt="MasterCard" class="metodo">
             </div>
             <div>
                 <h4>Libro de Reclamaciones</h4>
-                    <a href="contacto.html" class="lib"><img src="imagenes/libro-de-reclamaciones.png" alt="libro"></a>
+                <a href="reclamaciones.html" class="lib"><img src="imagenes/otros/libro_de_reclamaciones_icono.png" alt="libro"></a>
             </div>
         </div>
     </footer>
