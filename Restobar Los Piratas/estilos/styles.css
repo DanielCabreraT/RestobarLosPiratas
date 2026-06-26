@@ -253,6 +253,36 @@ footer a:hover {
     }
 }
 
+.btn-nav{
+    display: none;
+}
+
+@media (max-width:550px){
+    .btn-nav{
+        display: block;
+        font-size: 22px;
+        background: var(--dorado);
+        color: var(--negro-pirata);
+        border: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    header nav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header nav.activo{
+        display: flex;
+    }
+}
+
+
 @media (max-width: 480px) {
 
     /* HEADER */

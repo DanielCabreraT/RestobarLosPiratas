@@ -1,10 +1,12 @@
-document.getElementById('btnEnviar').addEventListener('click', function(event){
-    alert('MENSAJE ENVIADO')
+const boton = document.getElementById("btn-nav");
+const menu = document.getElementById("menu");
+
+boton.addEventListener("click", function(){
+    menu.classList.toggle("activo")
+
+    if (menu.classList.contains("activo")) {
+        boton.textContent = "✕";
+    } else {
+        boton.textContent = "☰";
+    }
 })
-
-const mensaje = document.getElementById("mensaje");
-const contador = document.getElementById("numero-letras");
-
-mensaje.addEventListener("input", function () {
-    contador.textContent = `${this.value.length}/300`;
-});
