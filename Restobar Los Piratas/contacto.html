@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/contactoStyle.css">
     <script src="js/main.js" defer></script>
+    <script src="js/contacto.js" defer></script>
 </head>
 
 <body>
@@ -67,9 +68,11 @@
                         <input type="email" id="email" name="email" placeholder="capitan@perlanegra.com" required>
                     </div>
 
-                    <div class="grupo-input">
+                    <div class="grupo-input contenedor-textarea">
                         <label for="mensaje">Mensaje o Reserva:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        <span id="numero-letras">0/250</span>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
                     </div>
 
                     <button type="submit" class="btn-enviar">Enviar Mensaje</button>
@@ -96,8 +99,10 @@
             </div>
             <div>
                 <h4>Síguenos</h4>
-                <a href="https://facebook.com" target="_blank"><img src="imagenes/redes/facebook.png" alt="facebookLosPiratas"></a>
-                <a href="https://instagram.com" target="_blank"><img src="imagenes/redes/instagram.png" alt="instagramLosPiratas"></a>
+                <a href="https://facebook.com" target="_blank"><img src="imagenes/redes/facebook.png"
+                        alt="facebookLosPiratas"></a>
+                <a href="https://instagram.com" target="_blank"><img src="imagenes/redes/instagram.png"
+                        alt="instagramLosPiratas"></a>
             </div>
             <div>
                 <h4>Métodos de Pago</h4>
@@ -107,7 +112,8 @@
             </div>
             <div>
                 <h4>Libro de Reclamaciones</h4>
-                <a href="reclamaciones.html" class="lib"><img src="imagenes/otros/libro_de_reclamaciones_icono.png" alt="libro"></a>
+                <a href="reclamaciones.html" class="lib"><img src="imagenes/otros/libro_de_reclamaciones_icono.png"
+                        alt="libro"></a>
             </div>
         </div>
     </footer>
