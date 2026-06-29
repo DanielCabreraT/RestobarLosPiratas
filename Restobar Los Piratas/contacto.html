@@ -57,25 +57,52 @@
             <article class="contacto-formulario">
                 <h3>Envíanos un Mensaje</h3>
                 <br>
-                <form action="#" method="POST" id="form-reserva">
+                <form action="#" method="POST" id="form-reserva" novalidate>
                     <div class="grupo-input">
                         <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: John Doe" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: John Doe"
+                            aria-describedby="error-nombre" required>
+                        <span class="error-mensaje" id="error-nombre"></span>
                     </div>
 
                     <div class="grupo-input">
-                        <label for="email">Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="capitan@perlanegra.com" required>
+                        <label for="motivo">Motivo:</label>
+                        <select id="motivo" name="motivo" aria-describedby="error-motivo" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="Reserva de mesa">Reserva de mesa</option>
+                            <option value="Evento especial">Evento especial</option>
+                            <option value="Consulta general">Consulta general</option>
+                            <option value="Reclamo o sugerencia">Reclamo o sugerencia</option>
+                        </select>
+                        <span class="error-mensaje" id="error-motivo"></span>
+                    </div>
+
+                    <div class="grupo-input campo-reserva" id="campo-personas" hidden>
+                        <label for="personas">Número de personas:</label>
+                        <input type="number" id="personas" name="personas" min="1" max="50"
+                            placeholder="Ejemplo: 4" aria-describedby="error-personas">
+                        <span class="error-mensaje" id="error-personas"></span>
+                    </div>
+
+                    <div class="grupo-input campo-reserva" id="campo-fecha" hidden>
+                        <label for="fecha">Fecha y hora deseada:</label>
+                        <input type="datetime-local" id="fecha" name="fecha"
+                            aria-describedby="error-fecha">
+                        <span class="error-mensaje" id="error-fecha"></span>
                     </div>
 
                     <div class="grupo-input contenedor-textarea">
-                        <label for="mensaje">Mensaje o Reserva:</label>
+                        <label for="mensaje">Mensaje adicional:</label>
                         <span id="numero-letras">0/250</span>
-                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..."
-                            required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="5"
+                            placeholder="Detalles, alergias, ocasión especial, etc."
+                            aria-describedby="error-mensaje"></textarea>
+                        <span class="error-mensaje" id="error-mensaje"></span>
                     </div>
 
-                    <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    <button type="submit" class="btn-enviar">Enviar Mensaje por WhatsApp</button>
+
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
                 </form>
             </article>
 
