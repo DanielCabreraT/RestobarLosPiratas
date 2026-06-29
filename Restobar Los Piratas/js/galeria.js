@@ -5,7 +5,7 @@ import { data } from "./catalogo.js";
 let catalogo = new Catalogo(data);
 
 function cargarProductos(){
-    for(let producto of catalogo.getProductos()){
+    for(let producto of catalogo.getProductos().slice().reverse()){
 
         const galeriaGrid = document.getElementById("galeria-grid");
 
