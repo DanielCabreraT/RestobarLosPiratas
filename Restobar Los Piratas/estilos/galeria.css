@@ -4,7 +4,7 @@
     min-height: 430px;
     padding: 90px 20px;
     background: 
-        linear-gradient(rgba(43, 20, 12, 0.88), rgba(92, 42, 20, 0.90)),
+        linear-gradient(#2b140ce0, #5c2a14e6),
         url("../imagenes/otros/salon_interior.jpeg");
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@
     content: "☠";
     position: absolute;
     font-size: 210px;
-    color: rgba(255, 243, 224, 0.08);
+    color: #fff3e014;
     top: 35px;
     left: 8%;
 }
@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     inset: 25px;
-    border: 2px solid rgba(217, 164, 65, 0.45);
+    border: 2px solid #d9a44173;
     border-radius: 18px;
     pointer-events: none;
 }
@@ -40,11 +40,11 @@
     position: relative;
     z-index: 2;
     max-width: 850px;
-    background: rgba(11, 11, 11, 0.45);
+    background: #0b0b0b73;
     padding: 45px 55px;
     border-radius: 18px;
     border: 2px solid var(--dorado);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 10px 25px #00000073;
     backdrop-filter: blur(3px);
 }
 
@@ -103,7 +103,7 @@
     border-radius: 16px;
     break-inside: avoid;
     border: 3px solid var(--cobre);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px #00000033;
     transition: all 0.3s ease;
 }
 
@@ -192,12 +192,12 @@
     font-weight: 700;
     font-family: inherit;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px #0000001a;
 }
 
 .btn-filtro:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px #00000026;
 }
 
 #filtro-todos:checked ~ .galeria-filtros [for="filtro-todos"],
