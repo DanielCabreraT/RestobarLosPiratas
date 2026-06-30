@@ -16,7 +16,7 @@
 }
 
 .banner-reclamaciones h2 {
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     font-size: 28px;
     margin-bottom: 10px;
 }
@@ -59,7 +59,7 @@ legend {
 
 label {
     font-weight: bold;
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     margin-bottom: 8px;
     font-size: 14px;
 }
@@ -72,7 +72,7 @@ textarea {
     padding: 12px;
     border: 1px solid var(--pergamino);
     background-color: var(--blanco);
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     border-radius: 4px;
     font-family: inherit;
     font-size: 15px;
@@ -100,7 +100,7 @@ textarea:focus {
     display: flex;
     align-items: center;
     font-weight: normal;
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     cursor: pointer;
 }
 
@@ -112,13 +112,13 @@ textarea:focus {
 .grupo-checkbox {
     margin-bottom: 25px;
     padding: 15px;
-    background-color: var(--pergamino); 
+    background: var(--fondo-tarjeta); 
     border-left: 4px solid var(--cobre);
     border-radius: 4px;
 }
 
 .grupo-checkbox label {
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     font-weight: bold;
     font-size: 13.5px;
 }

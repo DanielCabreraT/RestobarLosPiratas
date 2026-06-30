@@ -10,6 +10,73 @@
     --crema: #FFF3E0;
     --blanco: #FFFFFF;
     --sombra: #00000033;
+
+    --fondo-superficie: var(--crema);
+    --fondo-tarjeta: var(--pergamino);
+    --texto-principal: var(--marron-oscuro);
+}
+
+:root[data-tema="oscuro"] {
+    --fondo-superficie: #1B100A;
+    --fondo-tarjeta: #2E1A10;
+    --texto-principal: #F3D2B8;
+}
+
+.btn-tema {
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 0;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 10000;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn-tema:hover {
+    background: var(--cobre);
+    color: var(--crema);
+    transform: scale(1.1) rotate(15deg);
+}
+
+.icono-tema {
+    width: 20px;
+    height: 20px;
+}
+
+.icono-sol {
+    display: none;
+}
+
+:root[data-tema="oscuro"] .icono-luna {
+    display: none;
+}
+
+:root[data-tema="oscuro"] .icono-sol {
+    display: block;
+}
+
+@media (max-width: 550px) {
+    .btn-tema {
+        width: 36px;
+        height: 36px;
+        top: 14px;
+        right: 62px;
+    }
+
+    .icono-tema {
+        width: 18px;
+        height: 18px;
+    }
 }
 
 * {
@@ -50,8 +117,9 @@ html {
 
 body {
     font-family: 'Poppins', Arial, sans-serif;
-    background: var(--crema);
-    color: var(--marron-oscuro);
+    background: var(--fondo-superficie);
+    color: var(--texto-principal);
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -64,13 +132,14 @@ header {
     justify-content: space-between;
     align-items: center;
     gap: 20px;
-    padding: 24px 3%;
-    background: var(--crema);
+    padding: 24px 64px 24px 3%;
+    background: var(--fondo-superficie);
     border-bottom: 4px solid var(--dorado);
     box-shadow: 0 4px 14px var(--sombra);
     flex-wrap: wrap;
     position: relative;
     z-index: 9999;
+    transition: background 0.3s ease;
 }
 
 .logo {
@@ -89,9 +158,10 @@ header {
     font-family: 'Pirata One', cursive;
     font-size: clamp(30px, 3vw, 46px); 
     font-weight: 400;
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     letter-spacing: 1px;
     white-space: nowrap;
+    transition: color 0.3s ease;
 }
 
 header nav {
@@ -105,7 +175,7 @@ header nav {
 header nav a {
     position: relative;
     text-decoration: none;
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     font-size: 16px;
     font-weight: 700;
     transition: color 0.3s ease;
@@ -132,8 +202,8 @@ header nav a:hover::after {
 }
 
 footer {
-    background: linear-gradient(135deg, var(--negro-pirata), var(--marron-oscuro));
-    color: var(--crema);
+    background: linear-gradient(135deg, #0B0B0B, #2B140C);
+    color: #FFF3E0;
     padding: 45px 30px;
     margin-top: 40px;
     border-top: 4px solid var(--dorado);
@@ -154,7 +224,7 @@ footer p {
 
 footer a {
     display: block;
-    color: var(--crema);
+    color: #FFF3E0;
     text-decoration: none;
     margin: 5px 0;
     transition: color 0.3s ease;
@@ -276,7 +346,7 @@ footer a:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--crema);
+        background: var(--fondo-superficie);
         z-index: 9999;
         box-shadow: 0 10px 20px var(--sombra);
         display: flex !important;

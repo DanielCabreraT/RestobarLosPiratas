@@ -95,7 +95,7 @@
 
 .contenido {
     padding: 70px 8%;
-    background: var(--crema);
+    background: var(--fondo-superficie);
 }
 
 .historia {
@@ -114,16 +114,16 @@
 }
 
 .historia.show-en-vivo .texto {
-    background: var(--pergamino);
+    background: var(--fondo-tarjeta);
     border: 2px solid var(--dorado);
 }
 
 .historia.show-en-vivo .texto h3 {
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
 }
 
 .historia.show-en-vivo .texto p {
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
 }
 
 .imagen {
@@ -150,7 +150,7 @@
 
 .texto {
     flex: 2;
-    background: var(--pergamino);
+    background: var(--fondo-tarjeta);
     padding: 40px;
     border-radius: 16px;
     border: 2px solid var(--cobre);
@@ -161,12 +161,12 @@
     font-family: 'Pirata One', cursive;
     font-size: 46px;
     font-weight: 400;
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     margin-bottom: 18px;
 }
 
 .texto p {
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     line-height: 1.8;
     margin-bottom: 14px;
     font-size: 16px;
@@ -182,7 +182,7 @@
     position: relative;
     border: 2px solid var(--cobre);
     padding: 35px;
-    background: var(--pergamino);
+    background: var(--fondo-tarjeta);
     border-radius: 16px;
     box-shadow: 0 5px 14px var(--sombra);
     overflow: hidden;
@@ -201,7 +201,7 @@
 
 .tarjeta h3 {
     font-family: 'Pirata One', cursive;
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     font-size: 40px;
     font-weight: 400;
     margin-bottom: 14px;
@@ -210,7 +210,7 @@
 }
 
 .tarjeta p {
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     line-height: 1.7;
     position: relative;
     z-index: 1;
