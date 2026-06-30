@@ -81,7 +81,7 @@
 
 .menu-carta:hover {
     transform: translateY(-7px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+    box-shadow: 0 12px 24px #00000047;
 }
 
 .menu-carta h3 {

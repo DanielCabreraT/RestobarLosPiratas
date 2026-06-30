@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/galeria.css">
     <script src="js/main.js" defer></script>
+    <script type="module" src="js/galeria.js"></script>
 </head>
 
 <body>
@@ -49,36 +50,14 @@
             <input type="radio" id="filtro-ambiente" name="categoria">
 
             <div class="galeria-filtros">
-                <label for="filtro-todos" class="btn-filtro">Todos</label>
-                <label for="filtro-platos" class="btn-filtro">Platos</label>
-                <label for="filtro-bebidas" class="btn-filtro">Bebidas</label>
-                <label for="filtro-ambiente" class="btn-filtro">Ambiente</label>
+                <label for="filtro-todos" class="btn-filtro" data-categoria = "todos">Todos</label>
+                <label for="filtro-platos" class="btn-filtro" data-categoria = "comidas">Platos</label>
+                <label for="filtro-bebidas" class="btn-filtro" data-categoria = "bebidas">Bebidas</label>
+                <label for="filtro-ambiente" class="btn-filtro" data-categoria = "otros">Ambiente</label>
             </div>
 
-            <div class="galeria-grid">
-                <div class="galeria-item ambiente">
-                    <img src="imagenes/otros/zona_bar.jpeg" alt="Zona de bar de Los Piratas">
-                </div>
-                <div class="galeria-item ambiente">
-                    <img src="imagenes/otros/salon_interior.jpeg" alt="Salón interior de Los Piratas">
-                </div>
-                <div class="galeria-item ambiente">
-                    <img src="imagenes/otros/show_en_vivo.jpeg" alt="Show en vivo en Los Piratas">
-                </div>
-
-                <div class="galeria-item platos">
-                    <img src="imagenes/comidas/plato_combinado.jpeg" alt="Plato combinado">
-                </div>
-                <div class="galeria-item platos">
-                    <img src="imagenes/comidas/plato_mariscos.jpeg" alt="Plato de mariscos">
-                </div>
-
-                <div class="galeria-item bebidas">
-                    <img src="imagenes/bebidas/cerveza_pilsen.png" alt="Cerveza Pilsen">
-                </div>
-                <div class="galeria-item bebidas">
-                    <img src="imagenes/bebidas/gaseosa_coca_cola.png" alt="Gaseosa Coca Cola">
-                </div>
+            <div class="galeria-grid" id="galeria-grid">
+                
             </div>
         </section>
     </main>

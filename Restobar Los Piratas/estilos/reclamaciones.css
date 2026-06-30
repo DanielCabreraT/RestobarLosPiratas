@@ -86,7 +86,7 @@ select:focus,
 textarea:focus {
     outline: none;
     border-color: var(--cobre);
-    box-shadow: 0 0 8px rgba(166, 75, 34, 0.3); /* Resplandor color cobre */
+    box-shadow: 0 0 8px #a64b224d; /* Resplandor color cobre */
 }
 
 /* OPCIONES RADIO Y CHECKBOX */
