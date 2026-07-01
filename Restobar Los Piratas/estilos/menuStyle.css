@@ -74,7 +74,7 @@
 
 .menu-carta img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     position: relative;
 }
@@ -97,6 +97,7 @@
     color: var(--texto-principal);
     font-size: 16px;
     line-height: 1.6;
+    padding: 16px 25px;
 }
 
 .precio {
@@ -112,13 +113,13 @@
     text-align: center;
     font-family: 'Pirata One', cursive;
     margin: 25px 30px 25px;
-    color: var(--texto-principal);
     font-size: 27px;
-    background: var(--fondo-tarjeta);
+    color: var(--crema);
+    background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-madera));
     border: 2px solid var(--cobre);
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 5px 14px var(--sombra);
+    padding: 16px 30px;
 }
 
 @media (max-width: 480px) {

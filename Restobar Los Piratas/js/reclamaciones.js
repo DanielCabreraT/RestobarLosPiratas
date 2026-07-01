@@ -46,7 +46,7 @@ formulario.addEventListener("submit", function(event){
         }
     }
 
-    if(!/^\d{9}$/.test(telefono)){
+    if (!/^9\d{8}$/.test(telefono)){
         alert("El numero telefono debe tener exactamente 9 digitos");
         return;
     }
