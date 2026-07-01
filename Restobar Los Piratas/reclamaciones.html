@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="estilos/reclamaciones.css">
     <script src="js/main.js" defer></script>
     <script src="js/tema.js" defer></script>
+    <script type="module" src="./js/reclamaciones.js"></script>
     </head>
 <body>
 
     <header>
         <div class="logo">
-<img src="imagenes/logo/logo.png" alt="Logo de Los Piratas Restobar">
-            <h1>Los Piratas Restobar</h1>
+             <img src="imagenes/logo/logo.png" alt="Logo de Los Piratas Restobar">
+             <h1>Los Piratas Restobar</h1>
         </div>
 
         <button id="btn-nav" class="btn-nav">☰</button>
@@ -69,7 +70,7 @@
                     </div>
                     <div class="grupo-formulario">
                         <label for="num-doc">Número de Documento *</label>
-                        <input type="text" id="num-doc" name="num-doc" placeholder="Número" required pattern="[0-9]{8,12}">
+                        <input type="text" id="num-doc" name="num-doc" placeholder="Número" required>
                     </div>
                 </div>
 
@@ -109,8 +110,8 @@
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="pedido">Descripción *</label>
-                    <textarea id="pedido" name="pedido" rows="3" placeholder="Describe el producto o servicio" required></textarea>
+                    <label for="descripcion">Descripción *</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="Describe el producto o servicio" required></textarea>
                 </div>
             </fieldset>
 
@@ -144,7 +145,7 @@
 
             <div class="grupo-checkbox">
                 <label>
-                    <input type="checkbox" name="terminos" required>
+                    <input type="checkbox" name="terminos">
                     Declaro ser el titular del reclamo y acepto que los datos ingresados son verdaderos.
                 </label>
             </div>
@@ -160,5 +161,10 @@
         <p>&copy; 2026 Los Piratas Restobar - Todos los derechos reservados.</p>
     </footer>
 
+    <dialog id="modal-reclamo" class="modal-reclamo">
+      <h2>Reclamación enviada</h2>
+      <p>Tu reclamación fue registrada correctamente.</p>
+      <button type="button" id="cerrar-modal">Aceptar</button>
+    </dialog>
 </body>
 </html>
