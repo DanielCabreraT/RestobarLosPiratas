@@ -6,7 +6,7 @@
     padding: 90px 20px;
     background: 
         linear-gradient(#2b140ce0, #5c2a14e6),
-        url("../imagenes/otros/show_en_vivo.jpeg");
+        url("../imagenes/otros/show_en_vivo.png");
     background-size: cover;
     background-position: center;
     color: var(--crema);

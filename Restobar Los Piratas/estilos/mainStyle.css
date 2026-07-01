@@ -6,7 +6,7 @@
     padding: 110px 20px;
     background:
         linear-gradient(#2b140ce0, #5c2a14e0),
-        url("../imagenes/otros/salon_interior.jpeg");
+        url("../imagenes/otros/salon_interior.png");
     background-size: cover;
     background-position: center;
     color: var(--crema);

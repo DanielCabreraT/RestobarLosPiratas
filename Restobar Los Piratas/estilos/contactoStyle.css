@@ -6,7 +6,7 @@
     padding: 95px 20px;
     background:
         linear-gradient(#2b140ce0, #5c2a14eb),
-        url("../imagenes/otros/zona_bar.jpeg");
+        url("../imagenes/otros/zona_bar.png");
     background-size: cover;
     background-position: center;
     color: var(--crema);

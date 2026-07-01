@@ -108,6 +108,19 @@
     margin: 10px 0 28px;
 }
 
+.texto-promociones {
+    text-align: center;
+    font-family: 'Pirata One', cursive;
+    margin: 25px 30px 25px;
+    color: var(--texto-principal);
+    font-size: 27px;
+    background: var(--fondo-tarjeta);
+    border: 2px solid var(--cobre);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 14px var(--sombra);
+}
+
 @media (max-width: 480px) {
 
     /* MENU DE CATEGORÍAS */
