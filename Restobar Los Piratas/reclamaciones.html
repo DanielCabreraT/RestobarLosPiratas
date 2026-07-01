@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="js/tema-init.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro de Reclamaciones - Los Piratas Restobar</title>
@@ -8,13 +9,15 @@
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/reclamaciones.css">
     <script src="js/main.js" defer></script>
+    <script src="js/tema.js" defer></script>
+    <script type="module" src="./js/reclamaciones.js"></script>
     </head>
 <body>
 
     <header>
         <div class="logo">
-<img src="imagenes/logo/logo.png" alt="Logo de Los Piratas Restobar">
-            <h1>Los Piratas Restobar</h1>
+             <img src="imagenes/logo/logo.png" alt="Logo de Los Piratas Restobar">
+             <h1>Los Piratas Restobar</h1>
         </div>
 
         <button id="btn-nav" class="btn-nav">☰</button>
@@ -28,6 +31,15 @@
             <a href="galeria.html">Galería</a>
             <a href="contacto.html">Contacto</a>
         </nav>
+        <button id="btn-tema" class="btn-tema" aria-label="Cambiar modo claro/oscuro">
+            <svg class="icono-tema icono-luna" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <svg class="icono-tema icono-sol" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </button>
     </header>
 
     <main class="contenedor-reclamaciones">
@@ -58,7 +70,7 @@
                     </div>
                     <div class="grupo-formulario">
                         <label for="num-doc">Número de Documento *</label>
-                        <input type="text" id="num-doc" name="num-doc" placeholder="Número" required pattern="[0-9]{8,12}">
+                        <input type="text" id="num-doc" name="num-doc" placeholder="Número" required>
                     </div>
                 </div>
 
@@ -98,8 +110,8 @@
                 </div>
 
                 <div class="grupo-formulario">
-                    <label for="pedido">Descripción *</label>
-                    <textarea id="pedido" name="pedido" rows="3" placeholder="Describe el producto o servicio" required></textarea>
+                    <label for="descripcion">Descripción *</label>
+                    <textarea id="descripcion" name="descripcion" rows="3" placeholder="Describe el producto o servicio" required></textarea>
                 </div>
             </fieldset>
 
@@ -133,7 +145,7 @@
 
             <div class="grupo-checkbox">
                 <label>
-                    <input type="checkbox" name="terminos" required>
+                    <input type="checkbox" name="terminos">
                     Declaro ser el titular del reclamo y acepto que los datos ingresados son verdaderos.
                 </label>
             </div>
@@ -149,5 +161,10 @@
         <p>&copy; 2026 Los Piratas Restobar - Todos los derechos reservados.</p>
     </footer>
 
+    <dialog id="modal-reclamo" class="modal-reclamo">
+      <h2>Reclamación enviada</h2>
+      <p>Tu reclamación fue registrada correctamente.</p>
+      <button type="button" id="cerrar-modal">Aceptar</button>
+    </dialog>
 </body>
 </html>

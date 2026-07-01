@@ -128,11 +128,11 @@ cursor: pointer;
 .destacados-seccion {
     padding: 75px 8%;
     text-align: center;
-    background: var(--crema);
+    background: var(--fondo-superficie);
 }
 
 section h2 {
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     font-size: 52px;
     margin-bottom: 30px;
 }
@@ -154,7 +154,7 @@ section h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: var(--pergamino);
+    background: var(--fondo-tarjeta);
     border: 2px solid var(--cobre);
     border-radius: 16px;
     overflow: hidden;
@@ -201,12 +201,12 @@ section h2 {
     font-family: 'Pirata One', cursive;
     font-size: 32px;
     font-weight: 400;
-    color: var(--marron-oscuro);
+    color: var(--texto-principal);
     margin-bottom: 10px;
 }
 
 .tarjeta-contenido p {
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
     line-height: 1.6;
     margin-bottom: 12px;
 }
@@ -265,7 +265,7 @@ section h2 {
 .llamado-reserva {
     padding: 75px 20px;
     text-align: center;
-    background: var(--pergamino);
+    background: var(--fondo-tarjeta);
 }
 
 .llamado-reserva div {
@@ -274,13 +274,13 @@ section h2 {
     border: 2px solid var(--cobre);
     border-radius: 18px;
     padding: 45px;
-    background: var(--crema);
+    background: var(--fondo-superficie);
     box-shadow: 0 5px 14px var(--sombra);
 }
 
 .llamado-reserva p {
     margin-bottom: 25px;
-    color: var(--negro-pirata);
+    color: var(--texto-principal);
 }
 
 @media (max-width: 1000px) {
