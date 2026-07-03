@@ -2,45 +2,49 @@ import { Producto } from "./catalogo.js";
 import { Catalogo } from "./catalogo.js";
 import { data } from "./catalogo.js";
 
-let catalogo = new Catalogo(data);
+const catalogo = new Catalogo(data);
 
-function cargarProductos(){
-    for(let producto of catalogo.getProductos().slice().reverse()){
+function cargarProductos() {
+    const galeriaGrid = document.getElementById("galeria-grid");
 
-        const galeriaGrid = document.getElementById("galeria-grid");
+    // Se invierte el orden para mostrar los más recientes primero
+    for (const producto of catalogo.getProductos().slice().reverse()) {
+        const figure = document.createElement("figure");
+        const img = document.createElement("img");
+        const figcaption = document.createElement("figcaption");
 
-        let div = document.createElement('div');
-        let img = document.createElement('img');
+        figure.classList.add("tarjeta");
+        // Guardamos la categoría como atributo para poder filtrar sin lógica extra
+        figure.dataset.categoria = producto.categoria;
 
-        div.classList.add("tarjeta");
-        div.dataset.categoria = producto.categoria;
+        img.src = `imagenes/${producto.categoria}/${producto.imagen}`;
+        img.alt = producto.leyenda;
 
-        img.src = `imagenes/${producto.categoria}/${producto.imagen}`
+        figcaption.textContent = producto.leyenda;
 
-        div.appendChild(img);
-        galeriaGrid.appendChild(div);
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        galeriaGrid.appendChild(figure);
     }
 }
 
-function filtrarPorCategoria(event){
-    let categoria = event.target.dataset.categoria;
+// Muestra solo las tarjetas de la categoría seleccionada o todas si es "todos"
+function filtrarPorCategoria(event) {
+    const categoria = event.target.dataset.categoria;
 
-    if(categoria == 'todos'){
-        document.querySelectorAll('.tarjeta').forEach(t => t.style.display = 'block');
+    if (categoria === "todos") {
+        document.querySelectorAll(".tarjeta").forEach(t => t.style.display = "block");
         return;
     }
 
-    document.querySelectorAll('.tarjeta').forEach(t=>{
-        if(t.dataset.categoria == categoria){
-            t.style.display = 'block';
-        }else{
-            t.style.display = 'none'
-        }
+    document.querySelectorAll(".tarjeta").forEach(t => {
+        t.style.display = t.dataset.categoria === categoria ? "block" : "none";
     });
 }
 
-document.querySelectorAll('.btn-filtro').forEach(btn => {
-    btn.addEventListener('click', filtrarPorCategoria);
+// Asigna el evento de filtrado a cada botón de categoría
+document.querySelectorAll(".btn-filtro").forEach(btn => {
+    btn.addEventListener("click", filtrarPorCategoria);
 });
 
 cargarProductos();

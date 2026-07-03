@@ -1,0 +1,347 @@
+/* HERO NOSOTROS */
+
+.hero-nosotros {
+    position: relative;
+    min-height: 430px;
+    padding: 90px 20px;
+    background: 
+        linear-gradient(#2b140ce0, #5c2a14e6),
+        url("../imagenes/otros/show_en_vivo.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--crema);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid var(--dorado);
+    overflow: hidden;
+}
+
+.hero-nosotros::before {
+    content: "☠";
+    position: absolute;
+    font-size: 210px;
+    color: #fff3e014;
+    top: 35px;
+    left: 8%;
+}
+
+.hero-nosotros::after {
+    content: "";
+    position: absolute;
+    inset: 25px;
+    border: 2px solid #d9a44173;
+    border-radius: 18px;
+    pointer-events: none;
+}
+
+.hero-nosotros-contenido {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    background: #0b0b0b73;
+    padding: 45px 55px;
+    border-radius: 18px;
+    border: 2px solid var(--dorado);
+    box-shadow: 0 10px 25px #00000073;
+    backdrop-filter: blur(3px);
+}
+
+.etiqueta-hero {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.hero-nosotros h2 {
+    font-family: 'Pirata One', cursive;
+    font-size: 64px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    color: var(--crema);
+}
+
+.hero-nosotros p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: var(--crema);
+}
+
+.btn-hero {
+    display: inline-block;
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 800;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: var(--cobre);
+    color: var(--blanco);
+    transform: translateY(-3px);
+}
+
+.contenido {
+    padding: 70px 8%;
+    background: var(--fondo-superficie);
+}
+
+.historia {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 50px;
+    align-items: stretch;
+}
+
+.historia.show-en-vivo {
+    background: linear-gradient(135deg, var(--marron-oscuro), var(--marron-madera));
+    padding: 40px;
+    border-radius: 18px;
+    border: 3px solid var(--dorado);
+    box-shadow: 0 6px 18px #00000047;
+}
+
+.historia.show-en-vivo .texto {
+    background: var(--fondo-tarjeta);
+    border: 2px solid var(--dorado);
+}
+
+.historia.show-en-vivo .texto h3 {
+    color: var(--texto-principal);
+}
+
+.historia.show-en-vivo .texto p {
+    color: var(--texto-principal);
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen img {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid var(--cobre);
+    box-shadow: 0 6px 16px var(--sombra);
+}
+
+.historia.show-en-vivo .imagen img {
+    border-color: var(--dorado);
+}
+
+.texto {
+    flex: 2;
+    background: var(--fondo-tarjeta);
+    padding: 40px;
+    border-radius: 16px;
+    border: 2px solid var(--cobre);
+    box-shadow: 0 5px 14px var(--sombra);
+}
+
+.texto h3 {
+    font-family: 'Pirata One', cursive;
+    font-size: 46px;
+    font-weight: 400;
+    color: var(--texto-principal);
+    margin-bottom: 18px;
+}
+
+.texto p {
+    color: var(--texto-principal);
+    line-height: 1.8;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.tarjeta {
+    position: relative;
+    border: 2px solid var(--cobre);
+    padding: 35px;
+    background: var(--fondo-tarjeta);
+    border-radius: 16px;
+    box-shadow: 0 5px 14px var(--sombra);
+    overflow: hidden;
+}
+
+.tarjeta::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #d9a44147;
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+}
+
+.tarjeta h3 {
+    font-family: 'Pirata One', cursive;
+    color: var(--texto-principal);
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.tarjeta p {
+    color: var(--texto-principal);
+    line-height: 1.7;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .hero-nosotros {
+        padding: 70px 18px;
+        min-height: auto;
+    }
+
+    .hero-nosotros-contenido {
+        padding: 35px 25px;
+    }
+
+    .hero-nosotros h2 {
+        font-size: 46px;
+    }
+
+    .hero-nosotros p {
+        font-size: 16px;
+    }
+
+    .historia {
+        flex-direction: column;
+    }
+
+    .historia.show-en-vivo {
+        padding: 25px 20px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen img {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* HERO */
+
+    .hero-nosotros {
+        padding: 55px 12px;
+    }
+
+    .hero-nosotros::before {
+        font-size: 120px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .hero-nosotros::after {
+        inset: 12px;
+    }
+
+    .hero-nosotros-contenido {
+        padding: 22px 16px;
+    }
+
+    .etiqueta-hero {
+        font-size: 11px;
+        padding: 7px 14px;
+    }
+
+    .hero-nosotros h2 {
+        font-size: 34px;
+        line-height: 1.1;
+    }
+
+    .hero-nosotros p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .btn-hero {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+        padding: 12px 18px;
+    }
+
+    /* CONTENIDO */
+
+    .contenido {
+        padding: 45px 5%;
+    }
+
+    .historia {
+        gap: 22px;
+        margin-bottom: 35px;
+    }
+
+    .imagen img {
+        max-width: 260px;
+    }
+
+    .texto {
+        padding: 22px 18px;
+    }
+
+    .texto h3 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .texto p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* TARJETAS */
+
+    .info {
+        gap: 20px;
+    }
+
+    .tarjeta {
+        padding: 22px 18px;
+    }
+
+    .tarjeta h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .tarjeta p {
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: center;
+    }
+}
