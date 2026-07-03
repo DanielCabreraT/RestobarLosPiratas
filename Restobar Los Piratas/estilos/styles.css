@@ -110,7 +110,7 @@ html {
 
 .btn-volver-arriba:hover {
     background-color: var(--cobre);
-    color: white;
+    color: #ffffff;
     transform: translateY(-5px);
     box-shadow: 0 6px 15px #00000080;
 }
@@ -280,11 +280,10 @@ footer a:hover {
     transform: translateY(-3px) scale(1.1);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
     header {
         flex-direction: column;
         padding: 22px;
-        
     }
 
     .logo {

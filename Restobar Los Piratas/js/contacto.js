@@ -12,7 +12,7 @@ const campoFecha = document.getElementById("campo-fecha");
 
 const limite = 250;
 
-const numeroWhatsapp = "51924362908";
+const numeroWhatsapp = "51912262484";
 
 const motivosConReserva = ["Reserva de mesa", "Evento especial"];
 
