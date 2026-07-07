@@ -246,3 +246,38 @@
 #filtro-ambiente:checked ~ .galeria-grid .galeria-item:not(.ambiente) {
     display: none;
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.85);
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: 1000;
+}
+
+.modal img{
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 8px;
+}
+
+.modal p{
+    color: white;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#cerrar-modal{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
