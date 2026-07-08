@@ -92,10 +92,8 @@
 }
 
 .galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 16px;
-    justify-content: center;
+    columns: 5 220px;
+    column-gap: 16px;
 }
 
 /* Cada tarjeta es un <figure> que agrupa imagen y leyenda */
