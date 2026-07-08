@@ -48,13 +48,10 @@ function cargarProductos() {
 function filtrarPorCategoria(event) {
     const categoria = event.target.dataset.categoria;
 
-    if (categoria === "todos") {
-        document.querySelectorAll(".tarjeta").forEach(t => t.style.display = "block");
-        return;
-    }
-
     document.querySelectorAll(".tarjeta").forEach(t => {
-        t.style.display = t.dataset.categoria === categoria ? "block" : "none";
+        t.style.display = (categoria === "todos" || t.dataset.categoria === categoria)
+            ? "block"
+            : "none";
     });
 }
 
