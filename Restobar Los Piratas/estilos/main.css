@@ -138,15 +138,27 @@ section h2 {
 }
 
 .tarjetas-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    display: flex;
+    gap: 16px;
     align-items: stretch;
+    height: 420px;
 }
 
 .tarjeta-wrapper {
     display: flex;
+    flex: 1;
+    transition: flex 0.5s ease;
     animation: aparecer 2s ease-out forwards;
+    min-width: 0;
+}
+
+/* Al hacer hover la carta activa se expande */
+.tarjetas-grid:hover .tarjeta-wrapper {
+    flex: 0.6;
+}
+
+.tarjetas-grid:hover .tarjeta-wrapper:hover {
+    flex: 2.2;
 }
 
 .tarjeta-destacada {
@@ -159,8 +171,8 @@ section h2 {
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 5px 14px var(--sombra);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
+    transition: box-shadow 0.5s ease;
+    will-change: flex;
 }
 
 .tarjeta-destacada::before {
@@ -180,43 +192,73 @@ section h2 {
 }
 
 .tarjeta-destacada:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 12px 24px #00000047;
+    box-shadow: 0 14px 28px #00000060;
 }
 
 .tarjeta-destacada img {
     width: 100%;
-    height: 230px;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .tarjeta-contenido {
+    position: relative;
+    z-index: 1;
     padding: 24px;
     display: flex;
     flex-direction: column;
     flex: 1;
+    justify-content: flex-end;
+    background: linear-gradient(
+        to top,
+        rgba(11, 11, 11, 0.92) 0%,
+        rgba(11, 11, 11, 0.5) 50%,
+        transparent 100%
+    );
 }
 
 .tarjeta-contenido h3 {
     font-family: 'Pirata One', cursive;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
-    color: var(--texto-principal);
-    margin-bottom: 10px;
+    color: var(--crema);
+    margin-bottom: 8px;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .tarjeta-contenido p {
-    color: var(--texto-principal);
-    line-height: 1.6;
-    margin-bottom: 12px;
+    color: var(--pergamino);
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
 }
 
 .tarjeta-contenido span {
-    color: var(--cobre);
+    color: var(--dorado);
     font-size: 20px;
     font-weight: 800;
-    margin-top: auto;
-    padding-top: 8px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s;
+}
+
+/* Al hacer hover en la carta, el texto aparece con animación */
+.tarjeta-wrapper:hover .tarjeta-contenido h3,
+.tarjeta-wrapper:hover .tarjeta-contenido p,
+.tarjeta-wrapper:hover .tarjeta-contenido span {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* AMBIENTE */
@@ -242,22 +284,87 @@ section h2 {
 }
 
 .ambiente-galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    position: relative;
 }
 
-.ambiente-galeria img {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 14px;
+/* ── CARRUSEL ── */
+
+.carrusel {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
     border: 3px solid var(--dorado);
-    box-shadow: 0 5px 14px #00000059;
+    box-shadow: 0 8px 24px #00000059;
+    aspect-ratio: 4 / 3;
 }
 
-.ambiente-galeria img:first-child {
-    grid-column: span 2;
+.carrusel-pista {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.carrusel-pista img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Flechas de navegación */
+.carrusel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(11, 11, 11, 0.6);
+    color: var(--dorado);
+    border: 2px solid var(--dorado);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, transform 0.3s ease;
+    z-index: 2;
+}
+
+.carrusel-prev { left: 12px; }
+.carrusel-next { right: 12px; }
+
+.carrusel-btn:hover {
+    background: var(--dorado);
+    color: var(--negro-pirata);
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Puntos de paginación */
+.carrusel-puntos {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.carrusel-punto {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 243, 224, 0.45);
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    padding: 0;
+}
+
+.carrusel-punto.activo {
+    background: var(--dorado);
+    transform: scale(1.3);
 }
 
 /* LLAMADO */
@@ -284,7 +391,29 @@ section h2 {
 }
 
 @media (max-width: 1000px) {
-    .tarjetas-grid,
+    .tarjetas-grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* Desactivar el efecto expansión en tablet/mobile */
+    .tarjetas-grid:hover .tarjeta-wrapper,
+    .tarjetas-grid:hover .tarjeta-wrapper:hover {
+        flex: 1; 
+    }
+
+    .tarjeta-wrapper {
+        height: 320px;
+    }
+
+    /* En mobile el texto siempre visible */
+    .tarjeta-contenido h3,
+    .tarjeta-contenido p,
+    .tarjeta-contenido span {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     .ambiente {
         grid-template-columns: 1fr;
     }
@@ -321,13 +450,6 @@ section h2 {
         padding: 55px 5%;
     }
 
-    .ambiente-galeria {
-        grid-template-columns: 1fr;
-    }
-
-    .ambiente-galeria img:first-child {
-        grid-column: span 1;
-    }
 
     .llamado-reserva div {
         padding: 30px 22px;
@@ -428,12 +550,11 @@ section h2 {
     /* TARJETAS */
 
     .tarjetas-grid {
-        grid-template-columns: 1fr;
-        gap: 22px;
+        gap: 14px;
     }
 
-    .tarjeta-destacada img {
-        height: 190px;
+    .tarjeta-wrapper {
+        height: 260px;
     }
 
     .tarjeta-contenido {
@@ -441,7 +562,7 @@ section h2 {
     }
 
     .tarjeta-contenido h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     /* AMBIENTE */
@@ -455,17 +576,6 @@ section h2 {
         text-align: center;
     }
 
-    .ambiente-galeria {
-        grid-template-columns: 1fr;
-    }
-
-    .ambiente-galeria img {
-        height: 180px;
-    }
-
-    .ambiente-galeria img:first-child {
-        grid-column: span 1;
-    }
 
     /* LLAMADO */
 

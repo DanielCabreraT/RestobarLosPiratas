@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="estilos/main.css">
     <script type="module" src="js/main.js" defer></script>
     <script src="js/tema.js" defer></script>
+    <script type="module" src="js/carrusel.js" defer></script>
 </head>
 
 <body>
@@ -110,9 +111,15 @@
             </div>
 
             <div class="ambiente-galeria">
-                <img src="imagenes/otros/zonabar_6.png" alt="Ambiente temático de Los Piratas Restobar">
-                <img src="imagenes/otros/zonabar_7.png" alt="Ambiente temático de Los Piratas Restobar">
-                <img src="imagenes/otros/zonabar_16.png" alt="Ambiente temático de Los Piratas Restobar">
+                <div class="carrusel">
+                    <div class="carrusel-pista" id="carrusel-pista">
+                    </div>
+
+                    <button class="carrusel-btn carrusel-prev" aria-label="Imagen anterior">&#8592;</button>
+                    <button class="carrusel-btn carrusel-next" aria-label="Imagen siguiente">&#8594;</button>
+
+                    <div class="carrusel-puntos" id="carrusel-puntos"></div>
+                </div>
             </div>
         </section>
 
