@@ -43,79 +43,131 @@
     </header>
 
     <main>
-        <section class="contacto-hero">
-            <div class="hero-contenido">
+        <section class="hero-contacto">
+            <div class="hero-contacto-contenido">
                 <h2>Contáctanos</h2>
                 <p>¿Tienes dudas o quieres hacer una reserva? Nuestra tripulación está lista para atenderte.</p>
             </div>
         </section>
 
-        <section class="contacto-contenedor">
+        <section class="contacto">
 
-            <article class="contacto-info">
-                <h3>Nuestros Datos</h3>
-                <br>
-                <p><strong>Ubicación:</strong> Santa Rosa, Manzana 8 Lote 49, Chiclayo (Ref. al lado del terminal
-                    pesquero Ecomphisa).</p>
-                <br>
-                <p><strong>Teléfono:</strong> 912-262-484</p>
-                <br>
-                <p><strong>Horario de atención:</strong> Todos los días de 7:00 am a 11:00 am</p>
-                <br>
-                <p><strong>Atención a cargo de:</strong> Estany Marisol Acosta Torres</p>
-            </article>
+            <div class="info-contacto">
 
-            <article class="contacto-formulario">
-                <h3>Envíanos un Mensaje</h3>
-                <br>
-                <form action="#" method="POST" id="form-reserva" novalidate>
-                    <div class="grupo-input">
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: John Doe"
-                            aria-describedby="error-nombre" required>
-                        <span class="error-mensaje" id="error-nombre"></span>
+                <div class="contacto-cabecera">
+                    <div class="logo-contacto">
+                        <img src="imagenes/logo/logo.png" alt="Logo Los Piratas">
+                    </div>
+                    <div class="titulo-contacto">
+                        <h3>Los Piratas</h3>
+                        <p class="eslogan">Tu mensaje llega directo a nuestra tripulación.</p>
+                    </div>
+                </div>
+
+                <div class="datos-contacto-grid">
+                    <div class="dato">
+                        <span class="icono">📍</span>
+                        <div>
+                            <strong>Ubicación</strong>
+                            <p>Santa Rosa, Manzana 8 Lote 49, Chiclayo<br>
+                                (Ref. al lado del terminal pesquero Ecomphisa).</p>
+                        </div>
                     </div>
 
-                    <div class="grupo-input">
-                        <label for="motivo">Motivo:</label>
-                        <select id="motivo" name="motivo" aria-describedby="error-motivo" required>
-                            <option value="" disabled selected>Selecciona una opción</option>
-                            <option value="Reserva de mesa">Reserva de mesa</option>
-                            <option value="Evento especial">Evento especial</option>
-                            <option value="Consulta general">Consulta general</option>
-                            <option value="Reclamo o sugerencia">Reclamo o sugerencia</option>
-                        </select>
-                        <span class="error-mensaje" id="error-motivo"></span>
+                    <div class="dato">
+                        <span class="icono">📞</span>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p><a href="tel:+51912262484">+51 912 262 484</a></p>
+                        </div>
                     </div>
 
-                    <div class="grupo-input campo-reserva" id="campo-personas" hidden>
-                        <label for="personas">Número de personas:</label>
-                        <input type="number" id="personas" name="personas" min="1" max="50"
-                            placeholder="Ejemplo: 4" aria-describedby="error-personas">
-                        <span class="error-mensaje" id="error-personas"></span>
+                    <div class="dato">
+                        <span class="icono">🕒</span>
+                        <div>
+                            <strong>Horario de atención</strong>
+                            <p>Todos los días de 7:00 am a 11:00 pm</p>
+                        </div>
                     </div>
 
-                    <div class="grupo-input campo-reserva" id="campo-fecha" hidden>
-                        <label for="fecha">Fecha y hora deseada:</label>
-                        <input type="datetime-local" id="fecha" name="fecha"
-                            aria-describedby="error-fecha">
-                        <span class="error-mensaje" id="error-fecha"></span>
+                    <div class="dato">
+                        <span class="icono">⚓</span>
+                        <div>
+                            <strong>Atención a cargo de</strong>
+                            <p>Estany Marisol Acosta Torres</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="grupo-input contenedor-textarea">
-                        <label for="mensaje">Mensaje adicional:</label>
-                        <span id="numero-letras">0/250</span>
-                        <textarea id="mensaje" name="mensaje" rows="5"
-                            placeholder="Detalles, alergias, ocasión especial, etc."
-                            aria-describedby="error-mensaje"></textarea>
-                        <span class="error-mensaje" id="error-mensaje"></span>
-                    </div>
+                <div class="botones-contacto">
+                    <a href="https://wa.me/51912262484" class="btn-whatsapp" target="_blank">
+                        Escríbenos por WhatsApp
+                    </a>
+                    <a href="tel:+51912262484" class="btn-llamar">
+                        Llamar ahora
+                    </a>
+                </div>
 
-                    <button type="submit" class="btn-enviar">Enviar Mensaje por WhatsApp</button>
+            </div>
 
-                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
-                </form>
-            </article>
+            <div class="tarjetas-extras-contacto">
+                <div class="tarjeta-extra">
+                    <div class="tarjeta-extra-icono">📨</div>
+                    <h4>Envíanos un mensaje</h4>
+                    <p>Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
+                </div>
+                <div class="tarjeta-extra-formulario">
+                    <h4>Formulario de contacto</h4>
+
+                    <form action="#" method="POST" id="form-reserva" novalidate>
+                        <div class="grupo-input">
+                            <label for="nombre">Nombre completo:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: John Doe"
+                                aria-describedby="error-nombre" required>
+                            <span class="error-mensaje" id="error-nombre"></span>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="motivo">Motivo:</label>
+                            <select id="motivo" name="motivo" aria-describedby="error-motivo" required>
+                                <option value="" disabled selected>Selecciona una opción</option>
+                                <option value="Reserva de mesa">Reserva de mesa</option>
+                                <option value="Evento especial">Evento especial</option>
+                                <option value="Consulta general">Consulta general</option>
+                                <option value="Reclamo o sugerencia">Reclamo o sugerencia</option>
+                            </select>
+                            <span class="error-mensaje" id="error-motivo"></span>
+                        </div>
+
+                        <div class="grupo-input campo-reserva" id="campo-personas" hidden>
+                            <label for="personas">Número de personas:</label>
+                            <input type="number" id="personas" name="personas" min="1" max="50"
+                                placeholder="Ejemplo: 4" aria-describedby="error-personas">
+                            <span class="error-mensaje" id="error-personas"></span>
+                        </div>
+
+                        <div class="grupo-input campo-reserva" id="campo-fecha" hidden>
+                            <label for="fecha">Fecha y hora deseada:</label>
+                            <input type="datetime-local" id="fecha" name="fecha"
+                                aria-describedby="error-fecha">
+                            <span class="error-mensaje" id="error-fecha"></span>
+                        </div>
+
+                        <div class="grupo-input contenedor-textarea">
+                            <label for="mensaje">Mensaje adicional:</label>
+                            <span id="numero-letras">0/250</span>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                placeholder="Detalles, alergias, ocasión especial, etc."
+                                aria-describedby="error-mensaje"></textarea>
+                            <span class="error-mensaje" id="error-mensaje"></span>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensaje por WhatsApp</button>
+
+                        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
 
         </section>
     </main>

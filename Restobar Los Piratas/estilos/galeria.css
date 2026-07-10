@@ -281,3 +281,62 @@
     font-size: 45px;
     cursor: pointer;
 }
+
+.flecha-modal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(217, 164, 65, 0.15);
+    color: var(--dorado, #D9A441);
+    border: 2px solid var(--dorado, #D9A441);
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.flecha-modal:hover {
+    background: var(--dorado, #D9A441);
+    color: var(--negro-pirata, #0B0B0B);
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 6px 20px #d9a44180;
+}
+
+.flecha-modal svg {
+    width: 26px;
+    height: 26px;
+}
+
+#flecha-anterior {
+    left: 30px;
+}
+
+#flecha-siguiente {
+    right: 30px;
+}
+
+@media (max-width: 600px) {
+    .flecha-modal {
+        width: 44px;
+        height: 44px;
+    }
+
+    .flecha-modal svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #flecha-anterior {
+        left: 10px;
+    }
+
+    #flecha-siguiente {
+        right: 10px;
+    }
+}
