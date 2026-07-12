@@ -1,3 +1,70 @@
+.modal-menu{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    background:#000000cc;
+    z-index:99999;
+}
+
+.modal-menu-contenido{
+    position:relative;
+    display:flex;
+    width:90%;
+    max-width:1200px;
+    overflow:hidden;
+    border-radius:15px;
+    background:var(--fondo-tarjeta);
+}
+
+.modal-menu-contenido img{
+    width:55%;
+    object-fit:cover;
+}
+
+.modal-info{
+    padding:40px;
+}
+
+.modal-info h2{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.modal-info h3{
+    color:var(--cobre);
+    margin-top:20px;
+}
+
+.modal-info ul{
+    padding-left:22px;
+}
+
+.modal-info li{
+    margin-bottom:8px;
+}
+
+.modal-info p{
+    line-height:1.7;
+}
+
+#modal-precio{
+    display:block;
+    margin-top:20px;
+    font:32px 'Pirata One', cursive;
+    color:var(--cobre);
+}
+
+.cerrar-menu{
+    position:absolute;
+    top:10px;
+    right:20px;
+    font-size:40px;
+    cursor:pointer;
+    color:#ffffff;
+}
+
 .menu-cat {
     position: sticky;
     top: 0;
@@ -41,22 +108,29 @@
     width: 100%;
 }
 
-.categoria {
-    padding: 40px 30px;
-    text-align: left;
-    
+.categoria{
+    padding:40px 30px;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
     padding: 20px;
 }
 
 @media (max-width: 900px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .modal-menu-contenido{
+    flex-direction:column;
+    }
+
+    .modal-menu-contenido img{
+        width:100%;
+        height:200px;
     }
 }
 
@@ -76,7 +150,7 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
-    position: relative;
+    display:block;
 }
 
 .menu-carta:hover {
@@ -100,13 +174,11 @@
     padding: 16px 25px;
 }
 
-.precio {
-    font-family: 'Pirata One', cursive;
-    display: block;
-    color: var(--cobre);
-    font-size: 32px;
-    font-weight: 400;
-    margin: 10px 0 28px;
+.precio{
+    display:block;
+    padding:10px 0 20px;
+    font:400 32px 'Pirata One', cursive;
+    color:var(--cobre);
 }
 
 .texto-promociones {
@@ -123,9 +195,7 @@
 }
 
 @media (max-width: 480px) {
-
     /* MENU DE CATEGORÍAS */
-
     .menu-cat {
         padding: 14px 10px;
     }
@@ -174,8 +244,8 @@
         padding: 0 14px;
     }
 
-    .precio {
-        font-size: 28px;
-        margin: 12px 0 20px;
+    .precio{
+        font-size:28px;
+        padding:12px 0 20px;
     }
 }

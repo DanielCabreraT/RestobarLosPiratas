@@ -125,7 +125,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(11, 11, 11, 0.72);
+    background: #0b0b0bb8;
     color: var(--crema);
     text-align: center;
     padding: 8px 10px;
@@ -251,13 +251,11 @@
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.85);
-
+    background: #000000d9;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .modal img{
@@ -286,7 +284,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(217, 164, 65, 0.15);
+    background: #d9a44126;
     color: var(--dorado, #D9A441);
     border: 2px solid var(--dorado, #D9A441);
     border-radius: 50%;

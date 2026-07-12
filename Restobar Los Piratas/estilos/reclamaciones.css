@@ -181,7 +181,7 @@ textarea:focus {
 }
 
 .modal-reclamo::backdrop {
-    background: rgba(0, 0, 0, 0.6);
+    background: #00000099;
 }
 
 .modal-reclamo h2 {

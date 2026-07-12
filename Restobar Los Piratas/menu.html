@@ -4,12 +4,14 @@
     <script src="js/tema-init.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carta - Los Piratas Restobar</title>
+    <title>Menú - Los Piratas Restobar</title>
     <link rel="stylesheet" href="estilos/styles.css">
     <link rel="stylesheet" href="estilos/menu.css">
     <script src="js/main.js" defer></script>
     <script src="js/tema.js" defer></script>
+    <script src="js/menu.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -21,7 +23,7 @@
 
         <nav id="menu">
             <a href="index.html">Inicio</a>
-            <a href="menu.html">Menu</a>
+            <a href="menu.html">Menú</a>
             <a href="promociones.html">Promociones</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="ubicacion.html">Ubicación</a>
@@ -54,21 +56,30 @@
             <h2>Ceviches</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Toyo fresco; Limón; Cebolla morada; Ají limo; Cilantro; Camote; Choclo; Cancha serrana"
+                    data-preparacion="El toyo se corta en cubos y se marina con jugo de limón, ají limo y sal. Luego se mezcla con cebolla morada y cilantro fresco. Se sirve acompañado de camote, choclo y cancha serrana.">
+                    
                     <img src="imagenes/comidas/ceviche_toyo.png" alt="Ceviche de Toyo">
                     <h3>Ceviche de Toyo</h3>
                     <p>Toyo fresco marinado en limón con ají y cilantro, típico del norte.</p>
                     <span class="precio">S/ 25-40</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Caballa fresca; Limón; Cebolla morada; Ají limo; Cilantro; Camote; Choclo"
+                    data-preparacion="La caballa fresca se marina con limón y ají limo durante unos minutos. Se incorpora cebolla morada y cilantro picado, sirviéndose con camote y choclo.">
+                    
                     <img src="imagenes/comidas/ceviche_de_caballa_fresca.png" alt="Ceviche de Caballa">
                     <h3>Ceviche de Caballa</h3>
                     <p>Caballa fresca del día con limón, cebolla y ají limo.</p>
                     <span class="precio">S/ 25-35</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Pescado seco deshilachado; Limón; Cebolla morada; Ají limo; Cilantro; Yuca"
+                    data-preparacion="El pescado seco se hidrata y se mezcla con limón, cebolla morada, ají limo y cilantro. Se acompaña con yuca sancochada.">
+                    
                     <img src="imagenes/comidas/chinguirito.png" alt="Chinguirito">
                     <h3>Chinguirito</h3>
                     <p>Ceviche tradicional con cecina, mote y cancha serrana.</p>
@@ -82,21 +93,30 @@
             <h2>Sudados</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Caballa; Papa sancochada; Cebolla; Hierbas aromáticas; Sal"
+                    data-preparacion="La caballa se cocina en agua con hierbas aromáticas y sal. Se sirve caliente acompañada de papa sancochada.">
+                    
                     <img src="imagenes/comidas/caballa_pasada_por_agua_caliente.png" alt="Caballa Pasada">
                     <h3>Caballa Pasada</h3>
                     <p>Caballa fresca servida con su caldo y papa sancochada.</p>
                     <span class="precio">S/ 15</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Cachema; Tomate; Cebolla; Ají amarillo; Culantro; Limón"
+                    data-preparacion="La cachema se cocina lentamente en un aderezo de tomate, cebolla, ají amarillo y culantro hasta obtener un caldo lleno de sabor.">
+                    
                     <img src="imagenes/comidas/sudado_de_cachema.png" alt="Sudado de Cachema">
                     <h3>Sudado de Cachema</h3>
                     <p>Pescado sudado con tomate, cebolla y hierbas frescas.</p>
                     <span class="precio">S/ 25-30</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Pescado fresco; Limón; Cebolla; Perejil; Ajo"
+                    data-preparacion="El pescado se cocina en un caldo ligero con ajo, cebolla y perejil. Antes de servir se agrega limón fresco.">
+                    
                     <img src="imagenes/comidas/chilcano_de_pescado.png" alt="Chilcano de Pescado">
                     <h3>Chilcano de Pescado</h3>
                     <p>Sopa ligera de pescado con limón, cebolla y perejil.</p>
@@ -111,21 +131,30 @@
             <h2>Arroces</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Arroz; Calamar; Langostinos; Conchas; Mejillones; Ají amarillo; Culantro"
+                    data-preparacion="Se prepara un aderezo con ají amarillo y cebolla. Luego se cocina el arroz junto con los mariscos hasta lograr una textura cremosa.">
+                    
                     <img src="imagenes/comidas/arroz_con_mariscos.png" alt="Arroz con Mariscos">
                     <h3>Arroz con Mariscos</h3>
                     <p>Arroz cremoso con mariscos frescos y un toque de ají amarillo.</p>
                     <span class="precio">S/ 25-35</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Pato; Arroz; Culantro; Cerveza negra; Arvejas; Zanahoria"
+                    data-preparacion="El pato se cocina lentamente con cerveza y culantro. Posteriormente se incorpora el arroz para absorber todo el sabor del guiso.">
+                    
                     <img src="imagenes/comidas/arroz_con_pato_chiclayana.png" alt="Arroz con Pato">
                     <h3>Arroz con Pato Chiclayano</h3>
                     <p>Especialidad de la casa: arroz verde con pato tierno y cerveza.</p>
                     <span class="precio">S/ 30</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Maíz blanco; Carne; Papa; Culantro; Ají amarillo"
+                    data-preparacion="El maíz molido se cocina lentamente hasta espesar. Se agrega carne, papa y culantro obteniendo un plato tradicional norteño.">
+                    
                     <img src="imagenes/comidas/espesado.png" alt="Espesado">
                     <h3>Espesado</h3>
                     <p>Caldo espeso de arroz con papa y huevo, contundente y sabroso.</p>
@@ -140,21 +169,30 @@
             <h2>Fritos</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Carne de cerdo; Ajo; Comino; Chicha de jora; Yuca"
+                    data-preparacion="El cerdo se marina con especias y chicha de jora. Luego se fríe lentamente hasta quedar crocante por fuera y jugoso por dentro.">
+                    
                     <img src="imagenes/comidas/chicharron_de_calamar.png" alt="Chicharrón de Calamar">
                     <h3>Chicharrón de Calamar</h3>
                     <p>Anillos de calamar crocantes servidos con limón y salsa de la casa.</p>
                     <span class="precio">S/ 35</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Carne de cerdo; Ajo; Comino; Chicha de jora; Yuca"
+                    data-preparacion="El cerdo se marina con especias y chicha de jora. Luego se fríe lentamente hasta quedar crocante por fuera y jugoso por dentro.">
+                    
                     <img src="imagenes/comidas/frito.png" alt="Frito de Chancho">
                     <h3>Frito de Chancho</h3>
                     <p>Trocitos de chancho fritos, crocantes y dorados, con su clásica sarza.</p>
                     <span class="precio">S/ 20</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Pescado; Calamar; Langostinos; Harina; Yuca; Salsa criolla"
+                    data-preparacion="Los mariscos y el pescado se empanizan y fríen. Se sirven con yuca frita, salsa criolla y limón.">
+                    
                     <img src="imagenes/comidas/jalea_de_pescado.png" alt="Jalea de Pescado">
                     <h3>Jalea de Pescado</h3>
                     <p>Mezcla de mariscos y pescado apanados, con yuca dorada.</p>
@@ -169,28 +207,40 @@
             <h2>Especiales</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Pescado; Cangrejo; Calamar; Langostinos; Mejillones; Ají panca"
+                    data-preparacion="Se elabora un caldo concentrado con pescados y mariscos, condimentado con ají panca y especias hasta obtener un sabor intenso.">
+                    
                     <img src="imagenes/comidas/parihuela_chiclayana.png" alt="Parihuela">
                     <h3>Parihuela Chiclayana</h3>
                     <p>Sopa concentrada de mariscos con un sabor intenso y profundo.</p>
                     <span class="precio">S/ 60</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Papa amarilla; Pollo; Atún; Mayonesa; Palta; Huevo"
+                    data-preparacion="La papa amarilla se prensa y se mezcla con limón y ají amarillo. Luego se rellena con pollo o atún y se decora con huevo y palta.">
+                    
                     <img src="imagenes/comidas/causa.png" alt="Causa">
                     <h3>Causa Limeña</h3>
                     <p>Causa de papa amarilla rellena con atú o pollo, muy fresca.</p>
                     <span class="precio">S/ 20-25</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Cabrito; Culantro; Chicha de jora; Frejoles; Arroz"
+                    data-preparacion="El cabrito se cocina lentamente con culantro y chicha de jora hasta quedar muy tierno. Se acompaña con arroz y frejoles.">
+                    
                     <img src="imagenes/comidas/seco_de_cabrito_con_frijoles.png" alt="Seco de Cabrito">
                     <h3>Seco de Cabrito</h3>
                     <p>Cabrito guisado al estilo norteño, servido con frijoles y arroz.</p>
                     <span class="precio">S/ 28</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Raya; Huevos; Cebolla; Ajo; Perejil"
+                    data-preparacion="La raya previamente cocida se mezcla con huevos batidos, cebolla y perejil para preparar una tortilla dorada.">
+                    
                     <img src="imagenes/comidas/tortilla_de_raya.png" alt="Tortilla de Raya">
                     <h3>Tortilla de Raya</h3>
                     <p>Tortilla de mariscos con raya, un clásico chiclayano.</p>
@@ -205,105 +255,140 @@
             <h2>Bebidas</h2>
             <div class="grid">
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
+                    
                     <img src="imagenes/bebidas/gaseosa_coca_cola.png" alt="Gaseosa Coca Cola Personal">
                     <h3>Gaseosa Coca Cola Personal</h3>
                     <p>Botella personal de 500 ml, bien fría.</p>
                     <span class="precio">S/ 7.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien helada para acompañar cualquier plato del menú.">
+                    
                     <img src="imagenes/bebidas/gaseosa_coca_cola_personal.png" alt="Gaseosa Coca Cola Chiquita">
                     <h3>Gaseosa Coca Cola Chiquita</h3>
                     <p>Botella pequeña de 300 ml, bien helada.</p>
                     <span class="precio">S/ 5.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
+                    
                     <img src="imagenes/bebidas/gaseosa_fanta.png" alt="Gaseosa Fanta">
                     <h3>Gaseosa Fanta</h3>
                     <p>Refrescante sabor a naranja, bien fría.</p>
                     <span class="precio">S/ 7.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
+                    
                     <img src="imagenes/bebidas/gaseosa_pepsi.png" alt="Gaseosa Pepsi">
                     <h3>Gaseosa Pepsi</h3>
                     <p>Personal de Pepsi bien fría.</p>
                     <span class="precio">S/ 7.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
+                    
                     <img src="imagenes/bebidas/cerveza_corona.png" alt="Cerveza Corona">
                     <h3>Cerveza Corona</h3>
                     <p>Cerveza Corona bien fría en botella personal.</p>
                     <span class="precio">S/ 12.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/cerveza_pilsen.png" alt="Cerveza Pilsen">
                     <h3>Cerveza Pilsen</h3>
                     <p>Cerveza Pilsen bien helada, tradicional y refrescante.</p>
                     <span class="precio">S/ 10.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/cerveza_cristal.png" alt="Cerveza Cristal">
                     <h3>Cerveza Cristal</h3>
                     <p>Cerveza Cristal, suave y refrescante.</p>
                     <span class="precio">S/ 10.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/cerveza_cusquena.png" alt="Cerveza Cusqueña">
                     <h3>Cerveza Cusqueña</h3>
                     <p>Cerveza Cusqueña de tradición andina.</p>
                     <span class="precio">S/ 11.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/cerveza_wild.png" alt="Cerveza Wild">
                     <h3>Cerveza Wild</h3>
                     <p>Cerveza Wild, ligera y fácil de tomar.</p>
                     <span class="precio">S/ 10.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/bebida_redbull.png" alt="Red Bull">
                     <h3>Red Bull</h3>
                     <p>Lata de Red Bull para esos días de larga jornada.</p>
                     <span class="precio">S/ 10.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/bebida_sporade.png" alt="Sporade">
                     <h3>Sporade</h3>
                     <p>Hidratante Sporade, ideal para el calor chiclayano.</p>
                     <span class="precio">S/ 8.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/bebida_volt.png" alt="Volt">
                     <h3>Volt</h3>
                     <p>Energizante Volt para seguir la fiesta.</p>
                     <span class="precio">S/ 9.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/agua_cielo.png" alt="Agua Cielo">
                     <h3>Agua Cielo</h3>
                     <p>Agua mineral sin gas, botella personal.</p>
                     <span class="precio">S/ 5.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/agua_vida.png" alt="Agua Vida">
                     <h3>Agua Vida</h3>
                     <p>Agua Vida sin gas, perfecta para acompañar.</p>
                     <span class="precio">S/ 5.00</span>
                 </div>
 
-                <div class="menu-carta">
+                <div class="menu-carta"
+                    data-ingredientes="Bebida lista para consumir"
+                    data-preparacion="Se sirve bien fría para acompañar cualquier plato del menú.">
                     <img src="imagenes/bebidas/mikes_hard_lemonade.png" alt="Mike's Hard Lemonade">
                     <h3>Mike's Hard Lemonade</h3>
                     <p>Mike's Hard Lemonade, sabor cítrico y dulce.</p>
@@ -353,5 +438,22 @@
                 d="M7.27 1.047a1 1 0 0 1 1.46 0l6.345 6.77c.6.638.146 1.683-.73 1.683H11.5v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-1H1.654C.78 9.5.326 8.455.924 7.816zM14.346 8.5 8 1.731 1.654 8.5H4.5a1 1 0 0 1 1 1v1h5v-1a1 1 0 0 1 1-1zm-9.846 5a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1zm6 0h-5v1h5z" />
         </svg>
     </a>
+    <div id="modal-menu" class="modal-menu">
+        <div class="modal-menu-contenido">
+            <span class="cerrar-menu">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <div class="modal-info">
+                <h2 id="modal-titulo"></h2>
+
+                <h3>Ingredientes</h3>
+                <ul id="modal-ingredientes"></ul>
+
+                <h3>Preparación</h3>
+                <p id="modal-preparacion"></p>
+
+                <span id="modal-precio"></span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -214,8 +214,8 @@ section h2 {
     justify-content: flex-end;
     background: linear-gradient(
         to top,
-        rgba(11, 11, 11, 0.92) 0%,
-        rgba(11, 11, 11, 0.5) 50%,
+        #0b0b0beb 0%,
+        #0b0b0b80 50%,
         transparent 100%
     );
 }
@@ -316,7 +316,7 @@ section h2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(11, 11, 11, 0.6);
+    background: #0b0b0b99;
     color: var(--dorado);
     border: 2px solid var(--dorado);
     width: 40px;
@@ -355,7 +355,7 @@ section h2 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: rgba(255, 243, 224, 0.45);
+    background: #fff3e073;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
