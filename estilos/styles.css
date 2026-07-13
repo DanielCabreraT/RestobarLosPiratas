@@ -205,7 +205,7 @@ footer {
     background: linear-gradient(135deg, #0B0B0B, #2B140C);
     color: #FFF3E0;
     padding: 45px 30px;
-    margin-top: 40px;
+    margin-top: 0px;
     border-top: 4px solid var(--dorado);
     text-align: center;
 }
