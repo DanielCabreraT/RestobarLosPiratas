@@ -194,6 +194,82 @@
     padding: 16px 30px;
 }
 
+@media (max-width: 600px) {
+    .modal-menu {
+        padding: 15px;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .modal-menu-contenido {
+        flex-direction: column;
+        width: 100%;
+        max-width: 420px;
+        max-height: calc(100vh - 30px);
+        margin: auto;
+        overflow-y: auto;
+        border-radius: 12px;
+    }
+
+    .modal-menu-contenido img {
+        width: 100%;
+        height: 220px;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    .modal-info {
+        padding: 24px 20px 30px;
+    }
+
+    .modal-info h2 {
+        font-size: 30px;
+        margin-bottom: 12px;
+        padding-right: 30px;
+    }
+
+    .modal-info h3 {
+        margin-top: 16px;
+        font-size: 20px;
+    }
+
+    .modal-info ul {
+        padding-left: 20px;
+    }
+
+    .modal-info li {
+        margin-bottom: 6px;
+        font-size: 14px;
+    }
+
+    .modal-info p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    #modal-precio {
+        margin-top: 16px;
+        font-size: 28px;
+    }
+
+    .cerrar-menu {
+        position: fixed;
+        top: 22px;
+        right: 25px;
+        z-index: 2;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: #000000b3;
+        color: #ffffff;
+        font-size: 32px;
+        line-height: 1;
+    }
+}
+
 @media (max-width: 480px) {
     /* MENU DE CATEGORÍAS */
     .menu-cat {
