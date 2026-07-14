@@ -147,14 +147,46 @@ textarea:focus {
 }
 
 @media screen and (max-width: 600px) {
-    .fila-formulario {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-    
     .contenedor-reclamaciones {
+        width: auto;
+        max-width: none;
         margin: 20px 10px;
         padding: 20px 15px;
+        overflow: hidden;
+    }
+
+    fieldset {
+        width: 100%;
+        min-width: 0;
+        padding: 20px 15px;
+    }
+
+    legend {
+        max-width: 100%;
+        padding: 8px 12px;
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    .fila-formulario {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+    }
+
+    .grupo-formulario {
+        min-width: 0;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    select,
+    textarea,
+    #monto {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
     }
 }
 
