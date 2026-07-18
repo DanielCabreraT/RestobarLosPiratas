@@ -146,12 +146,22 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
+    text-decoration: none;
+    color: inherit;
+}
+.logo:hover {
+    color: inherit;
 }
 
 .logo img {
     width: clamp(150px, 15vw, 220px);
     height: auto;
     object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
 }
 
 .logo h1 {

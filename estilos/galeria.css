@@ -1,12 +1,9 @@
 .hero-galeria {
     position: relative;
     min-height: 430px;
-    padding: 90px 20px;
     background:
         linear-gradient(#2b140ce0, #5c2a14e6),
-        url("../imagenes/otros/salon_interior.png");
-    background-size: cover;
-    background-position: center;
+        url("../imagenes/otros/salon_interior.png")  center/cover;
     color: var(--crema);
     display: flex;
     justify-content: center;
@@ -91,28 +88,26 @@
     }
 }
 
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 16px;
-    align-items: start;
+.galeria-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(250px,1fr));
+    gap:8px;
 }
 
-/* Cada tarjeta es un <figure> que agrupa imagen y leyenda */
-.galeria-grid figure {
-    break-inside: avoid;
-    margin: 0;
-    position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 3px solid var(--cobre);
+.galeria-grid figure{
+    margin:0;
+    overflow:hidden;
+    border-radius:5px;
+    border: 2px solid var(--cobre);
     box-shadow: 0 5px 15px #00000033;
     transition: all 0.3s ease;
 }
 
-.galeria-grid figure img {
-    width: 100%;
-    display: block;
+.galeria-grid figure img{
+    width:100%;
+    height:250px;
+    display:block;
+    object-fit:cover;
 }
 
 .galeria-grid figure:hover {
@@ -265,7 +260,7 @@
 }
 
 .modal p{
-    color: white;
+    color: #ffffff;
     margin-top: 15px;
     font-size: 18px;
 }
@@ -274,8 +269,7 @@
     position: absolute;
     top: 20px;
     right: 35px;
-
-    color: white;
+    color: #ffffff;
     font-size: 45px;
     cursor: pointer;
 }
